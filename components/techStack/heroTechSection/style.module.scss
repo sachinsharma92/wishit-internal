@@ -1,0 +1,46 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables//mixins";
+
+.heroTechSection {
+  margin: 108px 0 50px;
+
+  .heroBtn {
+    display: flex;
+
+    .btn {
+      padding: 0 30px;
+      min-width: 259px;
+    }
+  }
+
+  .titleCustom {
+    margin-bottom: 10px;
+    font-size: 48px;
+  }
+
+  .iconSec {
+    display: flex;
+    gap: 0 18px;
+  }
+
+  .tectInfoSection {
+    margin-top: 69px;
+  }
+
+  .techListSection {
+    margin-top: 40px;
+
+    .techList {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      gap: 0 49px;
+      text-align: center;
+    }
+  }
+
+  .techWrapper {
+    margin-bottom: 154px;
+  }
+}

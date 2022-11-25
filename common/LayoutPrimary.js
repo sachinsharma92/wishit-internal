@@ -76,12 +76,12 @@ export default function LayoutPrimary(props) {
               <div className="card-contact">
                 <div className="info">
                   <div className="subtext">Email me at</div>
-                  <div className="text4 text-semibold">contact@website.com</div>
+                  <div className="text4 text-semibold mt-2">contact@website.com</div>
                 </div>
 
                 <div className="info">
                   <div className="subtext">Call us</div>
-                  <div className="text4 text-semibold">0927 6277 28525</div>
+                  <div className="text4 text-semibold mt-2">0927 6277 28525</div>
                 </div>
               </div>
             </div>

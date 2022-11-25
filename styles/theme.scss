@@ -97,6 +97,22 @@ body {
   color: $theme-primary !important;
 }
 
+.text-secondary {
+  color: $accent1 !important;
+}
+
+// Text Gradint
+.text-gradient {
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 222, 253, 1),
+    rgba(1, 222, 253, 1),
+    rgba(251, 120, 255, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .d-xs-visible {
   display: none;
 
@@ -125,7 +141,7 @@ body {
   font-size: 16px;
   line-height: 24px;
   padding: 0 32px;
-  border-radius: $radius-primary;
+  border-radius: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,19 +224,6 @@ body {
     }
   }
 }
-
-// Text Gradint
-.text-gradient {
-  background: -webkit-linear-gradient(
-    0deg,
-    rgba(0, 222, 253, 1),
-    rgba(1, 222, 253, 1),
-    rgba(251, 120, 255, 1)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 // Tab Vertical
 .tab-vertical-image {
   .text4 {

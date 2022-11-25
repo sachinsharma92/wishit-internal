@@ -1,0 +1,21 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables//mixins";
+
+.heroServiceSection {
+  margin: 108px 0 218px;
+
+  .heroBtn {
+    display: flex;
+
+    .btn {
+      padding: 0 30px;
+      min-width: 259px;
+    }
+  }
+
+  .titleCustom {
+    margin-bottom: 10px;
+    font-size: 40px;
+  }
+}
