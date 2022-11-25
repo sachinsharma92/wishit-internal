@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 export default function LayoutPrimary(props) {
   return (
@@ -61,7 +62,77 @@ export default function LayoutPrimary(props) {
       <main>
         {props.children}
       </main>
-      <footer></footer>
+      <footer className='main-footer'>
+        <div className="container">
+          <div className="row">
+            <div className="col-sm-6">
+              <h3 className="title3 text-white">
+                Wishit
+              </h3>
+              <p className="subText max-subtext">
+                We are always open to discuss your project and improve your online presence.
+              </p>
+
+              <div className="card-contact">
+                <div className="info">
+                  <div className="subtext">Email me at</div>
+                  <div className="text4 text-semibold">contact@website.com</div>
+                </div>
+
+                <div className="info">
+                  <div className="subtext">Call us</div>
+                  <div className="text4 text-semibold">0927 6277 28525</div>
+                </div>
+              </div>
+            </div>
+            <div className="col-sm-6">
+              <h3 className="title3 text-white">
+                Lets Talk!
+              </h3>
+              <p className="subText max-subtext">
+                We are always open to discuss your project, improve your online presence and help with your UX/UI design challenges.
+              </p>
+
+              <div className="social-icons">
+                <a href=""><FaFacebook /></a>
+                <a href=""><FaTwitter /></a>
+                <a href=""><FaInstagram /></a>
+                <a href=""><FaLinkedin /></a>
+              </div>
+            </div>
+          </div>
+
+          <div className='copyright'>
+            <div className="row">
+              <div className="col-sm-4">
+                <div className='copyright-text'> Copyright 2022, wishit.com</div>
+              </div>
+              <div className="col-sm-8 text-right">
+                <ul className="footer-nav">
+                  <Link href="/" className='nav-link'>
+                    Home
+                  </Link>
+                  <Link href="/" className='nav-link'>
+                    About us
+                  </Link>
+                  <Link href="/" className='nav-link'>
+                    Features
+                  </Link>
+                  <Link href="/" className='nav-link'>
+                    Pricing
+                  </Link>
+                  <Link href="/" className='nav-link'>
+                    FAQ
+                  </Link>
+                  <Link href="/" className='nav-link'>
+                    Blog
+                  </Link>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }

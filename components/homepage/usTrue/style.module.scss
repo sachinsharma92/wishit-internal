@@ -3,8 +3,8 @@
 @import "../../../styles/variables//mixins";
 
 // heroSection
-.technologyStack {
-  padding: 150px 0;
+.usTrue {
+  padding: 0px 0 180px;
   position: relative;
 
   .heading {
@@ -14,7 +14,14 @@
     position: relative;
   }
 
-  .text4 {
-    color: $text-secondary;
+  .trustSec {
+    margin-top: 80px;
+  }
+
+  .imgItem {
+  }
+
+  .content {
+    margin-top: 16px;
   }
 }
