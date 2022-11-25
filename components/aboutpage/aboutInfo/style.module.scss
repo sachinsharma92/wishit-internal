@@ -1,0 +1,37 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables//mixins";
+
+// heroSection
+.aboutInfo {
+  margin-top: 80px;
+
+  .textSection {
+    padding: 64px 80px 47px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutInfo {
+    background: $bg-surface2;
+    border-radius: $radius-primary;
+    overflow: hidden;
+    margin-top: 80px;
+  }
+
+  .banner {
+    height: 340px;
+    background-size: cover;
+  }
+
+  .textFocus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f87e7d;
+  }
+
+  .titleCustom {
+    margin: 21px 0 17px;
+  }
+}

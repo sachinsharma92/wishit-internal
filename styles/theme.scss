@@ -92,6 +92,11 @@ body {
   }
 }
 
+// Colors
+.text-primary {
+  color: $theme-primary !important;
+}
+
 .d-xs-visible {
   display: none;
 

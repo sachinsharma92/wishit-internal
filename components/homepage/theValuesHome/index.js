@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import style from "./style.module.scss"
 
-export default function UsTrue() {
+export default function TheValuesHome() {
   const imageGallery = [
     {
       imgUrl: '/icons/trust.svg',
@@ -22,7 +22,7 @@ export default function UsTrue() {
   ];
 
   return (
-    <section className={`${style.usTrue}`}>
+    <section className={`${style.theValuesHome}`}>
       <div className="container">
         <div className="client-say">
           <div class="row">
@@ -45,8 +45,8 @@ export default function UsTrue() {
                       height={64}
                     />
                     <div className={style.content}>
-                      <h4 className="text2">{item.title}</h4>
-                      <p className="subtext text-white">{item.subText}</p>
+                      <h4 className="text2 text-white">{item.title}</h4>
+                      <p className="subtext mb-0">{item.subText}</p>
                     </div>
                   </div>
                 </div>

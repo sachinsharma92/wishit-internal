@@ -1,0 +1,39 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables//mixins";
+
+// heroSection
+.theEnergy {
+  margin: 108px 0 218px;
+
+  .description {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+  }
+
+  .counterSection {
+    margin-top: 61px;
+  }
+
+  .titleSpace {
+    margin: 8px 0 14px;
+  }
+
+  .ourMissionVision {
+    margin-top: 160px;
+
+    .cardCustom {
+      background: $bg-surface2;
+      padding: 40px 32px;
+      border-radius: $radius-primary;
+    }
+  }
+
+  .iconAlign {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

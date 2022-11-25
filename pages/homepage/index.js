@@ -7,7 +7,7 @@ import HeroSection from '../../components/homepage/heroSection';
 import HowWeWork from '../../components/homepage/howWeWork';
 import OurWork from '../../components/homepage/ourWork';
 import TechnologyStack from '../../components/homepage/technologyStack';
-import UsTrue from '../../components/homepage/usTrue';
+import TheValuesHome from '../../components/homepage/theValuesHome';
 
 export default function Homepage() {
   return (
@@ -18,7 +18,7 @@ export default function Homepage() {
       <Clients />
       <TechnologyStack />
       <ClientsSay />
-      <UsTrue />
+      <TheValuesHome />
       <BuildGreatBanner />
     </LayoutPrimary>
   )

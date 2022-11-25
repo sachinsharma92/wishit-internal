@@ -1,0 +1,29 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables//mixins";
+
+.theValuesAbout {
+  padding: 0px 0 180px;
+  position: relative;
+  background: url("/images/bg/lines-graphic2.svg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .trustSec {
+    margin-top: 80px;
+  }
+
+  .imgItem {
+  }
+
+  .content {
+    margin-top: 16px;
+  }
+}
