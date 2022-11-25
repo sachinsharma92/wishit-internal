@@ -1,0 +1,21 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables//mixins";
+
+// heroSection
+.technologyStack {
+  height: 100vh;
+  padding: 120px 0;
+  position: relative;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .text4 {
+    color: $text-secondary;
+  }
+}

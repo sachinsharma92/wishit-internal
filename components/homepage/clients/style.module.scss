@@ -1,0 +1,53 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables//mixins";
+
+// heroSection
+.clients {
+  height: 100vh;
+  padding: 120px 0;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    top: -190px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/images/bg/lines-graphic.svg");
+    content: "";
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+  }
+
+  .upDownGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px 10px;
+    padding: 0 120px;
+    margin-top: 150px;
+
+    .cardGrid {
+      background: rgba($white, 0.1);
+      border-radius: 8px;
+      width: 160px;
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:nth-child(even) {
+        margin-top: -80px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+// variables
+@import "../../../styles/variables/colors";
+@import "../../../styles/variables//mixins";
+
+// heroSection
+.howWeWork {
+  height: 100vh;
+
+  .heroBtn {
+    display: flex;
+
+    .btn {
+      padding: 0 30px;
+      min-width: 259px;
+    }
+  }
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .imgBox {
+    background: red;
+    width: 595px;
+    height: 417px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .tabSection {
+    margin-top: 60px;
+  }
+}
