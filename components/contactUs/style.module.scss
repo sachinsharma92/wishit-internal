@@ -1,0 +1,16 @@
+// variables
+@import "../../styles/variables/colors";
+@import "../../styles/variables//mixins";
+
+.contactUs {
+  margin: 80px 0 160px;
+
+  .contactForm {
+    background: $bg-surface4;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 60px 74px;
+    margin-top: 80px;
+    border-radius: 12px;
+  }
+}
