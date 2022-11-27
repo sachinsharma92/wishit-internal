@@ -7,26 +7,35 @@ import { FaArrowRight } from 'react-icons/fa';
 import gsap from 'gsap';
 
 export default function HowWeWork() {
+
+
   useEffect(() => {
-    // gsap.registerPlugin(ScrollTrigger);
-    // gsap.from(".animation-block .animation-text", 1, {
-    //   y: 100,
-    //   ease: "power4.out",
-    //   delay: 0.5,
-    //   skewY: 0,
-    //   stagger: {
-    //     amount: 1
-    //   },
-    //   autoAlpha: 0,
-    // })
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".animation-block .animation-how-work", 1.4, {
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 7,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+      scrollTrigger: {
+        trigger: '#howWeWork',
+        start: 'top bottom',
+        markers: false
+      },
+    })
   }, [])
 
+
+
   return (
-    <section className={`${style.howWeWork} tab-vertical-image`}>
+    <section id='howWeWork' className={`${style.howWeWork} tab-vertical-image`}>
       <div className="container">
         <div className={style.heading}>
           <div className="animation-block">
-            <h2 className="title2 text-white animation-text">How we work.</h2>
+            <h2 className="title2 text-white animation-how-work">How we work.</h2>
           </div>
           <Link href="/">
             <a className='btn-link-custom'>
@@ -48,8 +57,7 @@ export default function HowWeWork() {
                         <Image
                           src="/images/services/discover.jpeg"
                           alt="Picture of the author"
-                          width={639}
-                          height={360}
+                          layout="fill"
                         />
                       </div>
                     </Nav.Link>
@@ -63,8 +71,7 @@ export default function HowWeWork() {
                         <Image
                           src="/images/services/design.webp"
                           alt="Picture of the author"
-                          width={639}
-                          height={360}
+                          layout="fill"
                         />
                       </div>
                     </Nav.Link>
@@ -78,8 +85,7 @@ export default function HowWeWork() {
                         <Image
                           src="/images/services/development.jpeg"
                           alt="Picture of the author"
-                          width={639}
-                          height={360}
+                          layout="fill"
                         />
                       </div>
                     </Nav.Link>
@@ -93,8 +99,7 @@ export default function HowWeWork() {
                         <Image
                           src="/images/services/testing.webp"
                           alt="Picture of the author"
-                          width={639}
-                          height={360}
+                          layout="fill"
                         />
                       </div>
                     </Nav.Link>
@@ -108,8 +113,7 @@ export default function HowWeWork() {
                         <Image
                           src="/images/services/deployment.webp"
                           alt="Picture of the author"
-                          width={639}
-                          height={360}
+                          layout="fill"
                         />
                       </div>
                     </Nav.Link>
@@ -123,8 +127,7 @@ export default function HowWeWork() {
                         <Image
                           src="/images/services/support.webp"
                           alt="Picture of the author"
-                          width={639}
-                          height={360}
+                          layout="fill"
                         />
                       </div>
                     </Nav.Link>
@@ -138,8 +141,7 @@ export default function HowWeWork() {
                       <Image
                         src="/images/services/discover.jpeg"
                         alt="Picture of the author"
-                        width={639}
-                        height={360}
+                        layout="fill"
                       />
                     </div>
                   </Tab.Pane>
@@ -148,8 +150,7 @@ export default function HowWeWork() {
                       <Image
                         src="/images/services/design.webp"
                         alt="Picture of the author"
-                        width={639}
-                        height={360}
+                        layout="fill"
                       />
                     </div>
                   </Tab.Pane>
@@ -158,8 +159,7 @@ export default function HowWeWork() {
                       <Image
                         src="/images/services/development.jpeg"
                         alt="Picture of the author"
-                        width={639}
-                        height={360}
+                        layout="fill"
                       />
                     </div>
                   </Tab.Pane>
@@ -168,8 +168,7 @@ export default function HowWeWork() {
                       <Image
                         src="/images/services/testing.webp"
                         alt="Picture of the author"
-                        width={639}
-                        height={360}
+                        layout="fill"
                       />
                     </div>
                   </Tab.Pane>
@@ -178,8 +177,7 @@ export default function HowWeWork() {
                       <Image
                         src="/images/services/deployment.webp"
                         alt="Picture of the author"
-                        width={639}
-                        height={360}
+                        layout="fill"
                       />
                     </div>
                   </Tab.Pane>
@@ -188,8 +186,7 @@ export default function HowWeWork() {
                       <Image
                         src="/images/services/support.webp"
                         alt="Picture of the author"
-                        width={639}
-                        height={360}
+                        layout="fill"
                       />
                     </div>
                   </Tab.Pane>

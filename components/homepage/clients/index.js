@@ -5,40 +5,52 @@ import style from "./style.module.scss"
 export default function Clients() {
   const clientCard = [
     {
-      imgUrl: '/icons/clients/icon1.svg'
+      imgUrl: '/icons/clients/icon1.svg',
+      duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon2.svg'
+      imgUrl: '/icons/clients/icon2.svg',
+      duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon3.svg'
+      imgUrl: '/icons/clients/icon3.svg',
+      duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon4.svg'
+      imgUrl: '/icons/clients/icon4.svg',
+      duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon5.svg'
+      imgUrl: '/icons/clients/icon5.svg',
+      duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon6.svg'
+      imgUrl: '/icons/clients/icon6.svg',
+      duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon7.svg'
+      imgUrl: '/icons/clients/icon7.svg',
+      duration: 1200
     },
     {
-      imgUrl: '/icons/clients/icon8.svg'
+      imgUrl: '/icons/clients/icon8.svg',
+      duration: 1200
     },
     {
-      imgUrl: '/icons/clients/icon9.svg'
+      imgUrl: '/icons/clients/icon9.svg',
+      duration: 1200
     },
     {
-      imgUrl: '/icons/clients/icon10.svg'
+      imgUrl: '/icons/clients/icon10.svg',
+      duration: 1200
     },
     {
-      imgUrl: '/icons/clients/icon11.svg'
+      imgUrl: '/icons/clients/icon11.svg',
+      duration: 1200
     },
     {
-      imgUrl: '/icons/clients/icon12.svg'
+      imgUrl: '/icons/clients/icon12.svg',
+      duration: 1200
     }
   ]
   return (
@@ -51,7 +63,7 @@ export default function Clients() {
         <div className={style.upDownGrid}>
           {clientCard.map((item, index) =>
           (
-            <div key={index} className={style.cardGrid}>
+            <div key={index} className={`${style.cardGrid}`} data-aos="fade-up" data-aos-duration={item.duration}>
               <Image
                 src={item.imgUrl}
                 alt="Picture of the author"

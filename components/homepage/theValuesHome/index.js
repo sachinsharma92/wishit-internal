@@ -1,5 +1,6 @@
+import gsap from 'gsap';
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from "./style.module.scss"
 
 export default function TheValuesHome() {
@@ -21,15 +22,43 @@ export default function TheValuesHome() {
     }
   ];
 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".animation-block .animation-the-value", 1.4, {
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 7,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+      scrollTrigger: {
+        trigger: '#theValue',
+        start: 'top bottom',
+        markers: false
+      },
+    })
+  }, [])
+
   return (
-    <section className={`${style.theValuesHome}`}>
+    <section id='theValue' className={`${style.theValuesHome}`}>
       <div className="container">
         <div className="client-say">
           <div className="row">
             <div className='col-sm-6'>
+
               <h3 className="title3 text-white">
-                The values that hold us
-                true & to account
+                <div className='animation-block'>
+                  <div className='animation-the-value'>
+                    The values that hold us
+                  </div>
+                </div>
+                <div className='animation-block'>
+                  <div className='animation-the-value'>
+                    true & to account
+                  </div>
+                </div>
               </h3>
             </div>
           </div>

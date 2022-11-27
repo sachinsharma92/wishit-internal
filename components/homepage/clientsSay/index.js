@@ -1,5 +1,6 @@
+import gsap from 'gsap'
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Carousel } from 'react-bootstrap'
 import { FaStar } from 'react-icons/fa'
 import style from "./style.module.scss"
@@ -15,10 +16,30 @@ export default function ClientsSay() {
     "https://images.pexels.com/photos/3283568/pexels-photo-3283568.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "https://images.pexels.com/photos/2741701/pexels-photo-2741701.jpeg?auto=compress&cs=tinysrgb&w=1600",
     "https://images.pexels.com/photos/718978/pexels-photo-718978.jpeg?auto=compress&cs=tinysrgb&w=1600",
-    "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"];
+    "https://images.unsplash.com/photo-1599566150163-29194dcaad36?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"
+  ];
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".animation-block .animation-client-say", 1.4, {
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 7,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+      scrollTrigger: {
+        trigger: '#clientSay',
+        start: 'top bottom',
+        markers: false
+      },
+    })
+  }, [])
 
   return (
-    <section className={`${style.clientsSay}`}>
+    <section id='clientSay' className={`${style.clientsSay}`}>
       <div className="container">
         <div className="client-say">
           <div className="row gx-5">
@@ -31,15 +52,18 @@ export default function ClientsSay() {
                       alt="Picture of the author"
                       width={109}
                       height={109}
+                      layout="fill"
                     />
                   </div>
                 ))}
               </div>
             </div>
             <div className='col-sm-6'>
-              <h3 className="title3 text-white">
-                What our Clients have to say...
-              </h3>
+              <div className='animation-block '>
+                <h3 className="title3 text-white animation-client-say">
+                  What our Clients have to say...
+                </h3>
+              </div>
               <Carousel variant="dark" indicators={false}>
                 {clientSay.map((item, index) => (
                   <Carousel.Item key={index}>

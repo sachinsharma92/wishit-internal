@@ -11,7 +11,7 @@ export default function HeroServiceSection() {
           <div className="col-sm-6">
             <h1 className="animation-block text-white text-center">
               <div className={`${style.titleCustom} title4 animation-text`}>A look at our </div>
-              <div className="title3 animation-text"><span className='text-gradient'> service palette</span></div>
+              <div className="title2 animation-text"><span className='text-gradient'> service palette</span></div>
             </h1>
           </div>
           <div className="col-sm-6">

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "~bootstrap/scss/bootstrap";
+@import "~aos/dist/aos.css";
 
 // variables
 @import "./variables/colors";
@@ -382,7 +383,7 @@ body {
   }
 
   .nav-pills {
-    gap: 10px 0;
+    gap: 20px 0;
   }
   .img-mobile {
     display: none;
@@ -405,7 +406,7 @@ body {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  overflow-x: scroll;
+  // overflow-x: scroll;
   margin-right: -68px;
   position: relative;
   z-index: 1;

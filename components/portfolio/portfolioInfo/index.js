@@ -60,8 +60,7 @@ export default function PortfolioInfo() {
                     <Image
                       src={item.projectBanner}
                       alt="Picture of the author"
-                      width={1000}
-                      height={1000}
+                      layout='fill'
                     />
                   </div>
 

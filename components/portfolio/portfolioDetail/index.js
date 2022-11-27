@@ -34,8 +34,7 @@ export default function PortfolioDetail() {
                     <Image
                       src={item.projectBanner}
                       alt="Picture of the author"
-                      width={1000}
-                      height={1000}
+                      layout='fill'
                     />
                   </div>
 
@@ -69,8 +68,7 @@ export default function PortfolioDetail() {
                     <Image
                       src={item.projectBanner}
                       alt="Picture of the author"
-                      width={1000}
-                      height={1000}
+                      layout='fill'
                     />
                   </div>
 
@@ -107,8 +105,7 @@ export default function PortfolioDetail() {
                     <Image
                       src={item.projectBanner}
                       alt="Picture of the author"
-                      width={1000}
-                      height={1000}
+                      layout='fill'
                     />
                   </div>
 

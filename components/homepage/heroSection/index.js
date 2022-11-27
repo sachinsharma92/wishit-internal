@@ -12,7 +12,7 @@ export default function HeroSection() {
       y: 100,
       ease: "power4.out",
       delay: 1,
-      skewY: 7,
+      skewY: 0,
       stagger: {
         amount: 0.3
       },
@@ -33,12 +33,14 @@ export default function HeroSection() {
                 <div className="title1 animation-text"><span className='text-gradient'> idea to life</span></div>
               </div>
             </h1>
-            <div className={style.heroBtn}>
-              <Link href="/">
-                <a className='btn btn-info btn-lg mt-5'>
-                  View our work <FaArrowDown size={18} />
-                </a>
-              </Link>
+            <div className='animation-block'>
+              <div className={`${style.heroBtn} animation-text`}>
+                <Link href="/">
+                  <a className='btn btn-info btn-lg mt-5'>
+                    View our work <FaArrowDown size={18} />
+                  </a>
+                </Link>
+              </div>
             </div>
           </div>
           <div className="col-sm-6">

@@ -1,6 +1,7 @@
+import gsap from 'gsap'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import style from "./style.module.scss"
 
@@ -44,11 +45,37 @@ export default function TechnologyStack() {
     },
   ];
 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".animation-block .animation-Technology", 1.4, {
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 0,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+      scrollTrigger: {
+        trigger: '#technologyStack',
+        start: 'top bottom',
+        markers: false
+      },
+    })
+  }, [])
+
   return (
-    <section className={`${style.technologyStack}`}>
+    <section id='technologyStack' className={`${style.technologyStack}`}>
       <div className="container">
         <div className={style.heading}>
-          <h2 className="title2 text-white">Heading about <br /> Technology stack</h2>
+          <h2 className='title2 text-white'>
+            <div className='animation-block'>
+              <div className="animation-Technology">Heading about </div>
+            </div>
+            <div className='animation-block'>
+              <div className="animation-Technology">Technology stack</div>
+            </div>
+          </h2>
           <Link href="/">
             <a className='btn-link-custom'>
               View All tech<FaArrowRight size={15} />
@@ -81,6 +108,8 @@ export default function TechnologyStack() {
                             alt="Picture of the author"
                             width={32}
                             height={32}
+                            data-aos="zoom-in"
+                            data-aos-duration="1000"
                           />
                         </div>
                       );
