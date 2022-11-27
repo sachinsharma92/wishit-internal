@@ -1,16 +1,33 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
 import style from "./style.module.scss"
 import { Col, Nav, Row, Tab } from 'react-bootstrap';
 import Link from 'next/link';
 import { FaArrowRight } from 'react-icons/fa';
+import gsap from 'gsap';
 
 export default function HowWeWork() {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".animation-block .animation-text", 1, {
+      y: 100,
+      ease: "power4.out",
+      delay: 0.5,
+      skewY: 0,
+      stagger: {
+        amount: 1
+      },
+      autoAlpha: 0,
+    })
+  }, [])
+
   return (
     <section className={`${style.howWeWork} tab-vertical-image`}>
       <div className="container">
         <div className={style.heading}>
-          <h2 className="title2 text-white">How we work.</h2>
+          <div className="animation-block">
+            <h2 className="title2 text-white animation-text">How we work.</h2>
+          </div>
           <Link href="/" className='btn-link-custom'>
             Get in touch with us <FaArrowRight size={15} />
           </Link>

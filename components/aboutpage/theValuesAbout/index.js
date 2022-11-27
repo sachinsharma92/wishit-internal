@@ -40,7 +40,7 @@ export default function TheValuesAbout() {
     <section className={`${style.theValuesAbout}`}>
       <div className="container">
         <div className="client-say">
-          <div class="row">
+          <div className="row">
             <div className='col-sm-6'>
               <h3 className="title3 text-white">
                 The values that hold us
@@ -49,7 +49,7 @@ export default function TheValuesAbout() {
             </div>
           </div>
           <div className={style.trustSec}>
-            <div class="row gx-5 gy-5">
+            <div className="row gx-5 gy-5">
               {imageGallery.map((item, index) => (
                 <div key={index} className='col-sm-4'>
                   <div className={style.imgItem}>

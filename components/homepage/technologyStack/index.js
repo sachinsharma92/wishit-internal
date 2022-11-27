@@ -55,10 +55,10 @@ export default function TechnologyStack() {
         </div>
 
         <div className="client-section">
-          <div class="row gx-5">
+          <div className="row gx-5">
             {techSection.map((techItem, index) => {
               return (
-                <div key={index} class="col">
+                <div key={index} className="col">
                   <div className='icon-heading'>
                     <Image
                       src={techItem.icon}

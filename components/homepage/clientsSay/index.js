@@ -21,7 +21,7 @@ export default function ClientsSay() {
     <section className={`${style.clientsSay}`}>
       <div className="container">
         <div className="client-say">
-          <div class="row gx-5">
+          <div className="row gx-5">
             <div className='col-sm-6'>
               <div className="img-flow-style">
                 {imageGallery.map((item, index) => (

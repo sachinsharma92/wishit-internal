@@ -2,54 +2,58 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { useRouter } from "next/router";
 
 export default function LayoutPrimary(props) {
+  const router = useRouter();
+
   return (
     <div>
+      {/* Main Header */}
       <header>
         <nav className="navbar navbar-expand-lg sticky-top navbar-custom">
           <div className="container">
             <div className='navbar-row'>
-              <a className="navbar-brand" href="#">
+              <Link className="navbar-brand" href="/">
                 <Image
                   src="/images/logo.svg"
                   alt="Picture of the author"
                   width={110}
                   height={28}
                 />
-              </a>
+              </Link>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
               </button>
-              <div className="collapse navbar-collapse" id="navbarSupportedContent">
+              <div className="collapse navbar-collapse">
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <Link href="/" className='nav-link active'>
+                    <Link href="/" className={`nav-link ${router.pathname == "/" ? "active" : ""}`}>
                       Home
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/" className='nav-link'>
+                    <Link href="/about" className={`nav-link ${router.pathname == "/about" ? "active" : ""}`}>
                       About us
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/" className='nav-link'>
+                    <Link href="/services" className={`nav-link ${router.pathname == "/services" ? "active" : ""}`}>
                       Services
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/" className='nav-link'>
+                    <Link href="/portfolio" className={`nav-link ${router.pathname == "/portfolio" ? "active" : ""}`}>
                       Portfolio
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/" className='nav-link'>
+                    <Link href="/tech-stack" className={`nav-link ${router.pathname == "/tech-stack" ? "active" : ""}`}>
                       Technology Stack
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/" className='btn btn-info btn-sm'>
+                    <Link href="/contact" className='btn btn-info btn-sm'>
                       Contact us
                     </Link>
                   </li>
@@ -59,9 +63,13 @@ export default function LayoutPrimary(props) {
           </div>
         </nav>
       </header>
+
+      {/* Main Container */}
       <main>
         {props.children}
       </main>
+
+      {/* Main Footer */}
       <footer className='main-footer'>
         <div className="container">
           <div className="row">

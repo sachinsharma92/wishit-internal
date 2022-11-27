@@ -42,12 +42,11 @@ body {
 }
 
 .scroll-hide {
-  &.example::-webkit-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
     display: none;
-  }
-  .example {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
   }
 }
 
@@ -64,7 +63,6 @@ body {
 }
 
 .animation-block {
-  position: relative;
   overflow: hidden;
 }
 
@@ -173,6 +171,7 @@ body {
   color: $theme-primary;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
+  cursor: pointer;
 
   &:hover {
     color: $white;
@@ -297,6 +296,8 @@ body {
   flex-wrap: nowrap;
   overflow-x: scroll;
   margin-right: -68px;
+  position: relative;
+  z-index: 1;
 
   .card-custom {
     min-width: 70%;

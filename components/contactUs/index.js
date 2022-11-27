@@ -31,67 +31,67 @@ export default function ContactUs() {
           <form>
             <div className="row row-for-form">
               <div className="col-sm-6">
-                <div class="form-item">
-                  <label for="exampleFormControlInput1" class="form-label">Name</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                <div className="form-item">
+                  <label className="form-label">Name</label>
+                  <input type="email" className="form-control" placeholder="name@example.com" />
                 </div>
               </div>
               <div className="col-sm-6">
-                <div class="form-item">
-                  <label for="exampleFormControlInput1" class="form-label">* Email </label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                <div className="form-item">
+                  <label className="form-label">* Email </label>
+                  <input type="email" className="form-control" placeholder="name@example.com" />
                 </div>
               </div>
               <div className="col-sm-6">
-                <div class="form-item">
-                  <label for="exampleFormControlInput1" class="form-label">Phone No.</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                <div className="form-item">
+                  <label className="form-label">Phone No.</label>
+                  <input type="email" className="form-control" placeholder="name@example.com" />
                 </div>
               </div>
               <div className="col-sm-6">
-                <div class="form-item">
-                  <label for="exampleFormControlInput1" class="form-label">City</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                <div className="form-item">
+                  <label className="form-label">City</label>
+                  <input type="email" className="form-control" placeholder="name@example.com" />
                 </div>
               </div>
 
               <div className="col-sm-12">
-                <div class="form-item">
-                  <label for="exampleFormControlInput1" class="form-label">What service do you need?</label>
+                <div className="form-item">
+                  <label className="form-label">What service do you need?</label>
 
                   <div className='radio-sec'>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label class="form-check-label" for="flexRadioDefault1">
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" />
+                      <label className="form-check-label">
                         Web Design
                       </label>
                     </div>
 
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label class="form-check-label" for="flexRadioDefault1">
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" />
+                      <label className="form-check-label">
                         App Design
                       </label>
                     </div>
 
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label class="form-check-label" for="flexRadioDefault1">
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" />
+                      <label className="form-check-label">
                         Digital Marketing
                       </label>
                     </div>
 
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-                      <label class="form-check-label" for="flexRadioDefault1">
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" />
+                      <label className="form-check-label">
                         Other
                       </label>
                     </div>
 
 
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-                      <label class="form-check-label" for="flexRadioDefault2">
+                    <div className="form-check">
+                      <input className="form-check-input" type="radio" name="flexRadioDefault" checked />
+                      <label className="form-check-label">
                         App Design
                       </label>
                     </div>
@@ -100,9 +100,9 @@ export default function ContactUs() {
               </div>
 
               <div className="col-sm-12">
-                <div class="form-item">
-                  <label for="exampleFormControlTextarea1" class="form-label">*Message</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                <div className="form-item">
+                  <label className="form-label">*Message</label>
+                  <textarea className="form-control" rows="6"></textarea>
                 </div>
               </div>
             </div>

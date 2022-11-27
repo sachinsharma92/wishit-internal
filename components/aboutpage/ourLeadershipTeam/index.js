@@ -25,7 +25,7 @@ export default function OurLeadershipTeam() {
     <section className={`${style.theValuesAbout}`}>
       <div className="container">
         <div className="client-say">
-          <div class="row">
+          <div className="row">
             <div className='col-sm-12'>
               <h3 className="title3 text-white text-center">
                 Our Leadership Team
@@ -34,7 +34,7 @@ export default function OurLeadershipTeam() {
             </div>
           </div>
           <div className={style.trustSec}>
-            <div class="row gx-5 gy-5">
+            <div className="row gx-5 gy-5">
               {imageGallery.map((item, index) => (
                 <div key={index} className='col-sm-4'>
                   <div className={style.imgItem}>

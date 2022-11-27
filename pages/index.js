@@ -6,7 +6,7 @@ export default function Home() {
     <div className="main-container">
       <Head>
         <meta charSet="utf-8" />
-        <link rel="icon" href="../static/favicon.ico" />
+        {/* <link rel="icon" href="../static/favicon.ico" /> */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="robots" content="index, follow" />
         <meta
