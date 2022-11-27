@@ -15,13 +15,15 @@ export default function LayoutPrimary(props) {
         <nav className="navbar navbar-expand-lg navbar-custom">
           <div className="container">
             <div className='navbar-row'>
-              <Link className="navbar-brand" href="/">
-                <Image
-                  src="/images/logo.svg"
-                  alt="Picture of the author"
-                  width={110}
-                  height={28}
-                />
+              <Link href="/" className="navbar-brand" >
+                <a>
+                  <Image
+                    src="/images/logo.svg"
+                    alt="Picture of the author"
+                    width={110}
+                    height={28}
+                  />
+                </a>
               </Link>
               <button onClick={() => setToggle(!toggle)} className={`navbar-toggler ${toggle ? "active-toggle" : ''}`}>
                 <div className="line-1"></div>
@@ -31,33 +33,45 @@ export default function LayoutPrimary(props) {
               <div className={`navbar-collapse ${toggle ? "navbar-collapsed" : ''}`}>
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
-                    <Link href="/" className={`nav-link ${router.pathname == "/" ? "active" : ""}`}>
-                      Home
+                    <Link href="/">
+                      <a className={`nav-link ${router.pathname == "/" ? "active" : ""}`}>
+                        Home
+                      </a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/about" className={`nav-link ${router.pathname == "/about" ? "active" : ""}`}>
-                      About us
+                    <Link href="/about">
+                      <a className={`nav-link ${router.pathname == "/about" ? "active" : ""}`}>
+                        About us
+                      </a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/services" className={`nav-link ${router.pathname == "/services" ? "active" : ""}`}>
-                      Services
+                    <Link href="/services">
+                      <a className={`nav-link ${router.pathname == "/services" ? "active" : ""}`}>
+                        Services
+                      </a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/portfolio" className={`nav-link ${router.pathname == "/portfolio" ? "active" : ""}`}>
-                      Portfolio
+                    <Link href="/portfolio">
+                      <a className={`nav-link ${router.pathname == "/portfolio" ? "active" : ""}`}>
+                        Portfolio
+                      </a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/tech-stack" className={`nav-link ${router.pathname == "/tech-stack" ? "active" : ""}`}>
-                      Technology Stack
+                    <Link href="/tech-stack">
+                      <a className={`nav-link ${router.pathname == "/tech-stack" ? "active" : ""}`}>
+                        Technology Stack
+                      </a>
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/contact" className='btn btn-info btn-sm'>
-                      Contact us
+                    <Link href="/contact">
+                      <a className='btn btn-info btn-sm'>
+                        Contact us
+                      </a>
                     </Link>
                   </li>
                 </ul>
@@ -120,24 +134,24 @@ export default function LayoutPrimary(props) {
               </div>
               <div className="col-sm-8 text-right">
                 <ul className="footer-nav">
-                  <Link href="/" className='nav-link'>
+                  <a href="/" className='nav-link'>
                     Home
-                  </Link>
-                  <Link href="/" className='nav-link'>
+                  </a>
+                  <a href="/" className='nav-link'>
                     About us
-                  </Link>
-                  <Link href="/" className='nav-link'>
+                  </a>
+                  <a href="/" className='nav-link'>
                     Features
-                  </Link>
-                  <Link href="/" className='nav-link'>
+                  </a>
+                  <a href="/" className='nav-link'>
                     Pricing
-                  </Link>
-                  <Link href="/" className='nav-link'>
+                  </a>
+                  <a href="/" className='nav-link'>
                     FAQ
-                  </Link>
-                  <Link href="/" className='nav-link'>
+                  </a>
+                  <a href="/" className='nav-link'>
                     Blog
-                  </Link>
+                  </a>
                 </ul>
               </div>
             </div>

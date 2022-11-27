@@ -12,8 +12,10 @@ export default function BuildGreatBanner() {
               <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
             </div>
             <div>
-              <Link href="/" className='btn btn-info'>
-                Get Started
+              <Link href="/">
+                <a className='btn btn-info'>
+                  Get Started
+                </a>
               </Link>
             </div>
           </div>

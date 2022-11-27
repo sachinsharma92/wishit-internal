@@ -49,8 +49,10 @@ export default function PortfolioInfo() {
                       <h4 className={`${style.titleCustom} title4 text-white mt-0`}>{item.projectName}</h4>
                       <p className="subtext mb-0">{item.projectSubtile}</p>
                     </div>
-                    <Link href="/" className='btn-link-custom'>
-                      View More <FaArrowRight size={15} />
+                    <Link href="/">
+                      <a className='btn-link-custom'>
+                        View More <FaArrowRight size={15} />
+                      </a>
                     </Link>
                   </div>
 

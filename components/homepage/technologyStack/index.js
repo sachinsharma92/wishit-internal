@@ -49,8 +49,10 @@ export default function TechnologyStack() {
       <div className="container">
         <div className={style.heading}>
           <h2 className="title2 text-white">Heading about <br /> Technology stack</h2>
-          <Link href="/" className='btn-link-custom'>
-            View All tech<FaArrowRight size={15} />
+          <Link href="/">
+            <a className='btn-link-custom'>
+              View All tech<FaArrowRight size={15} />
+            </a>
           </Link>
         </div>
 

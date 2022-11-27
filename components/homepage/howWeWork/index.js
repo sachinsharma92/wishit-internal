@@ -28,8 +28,10 @@ export default function HowWeWork() {
           <div className="animation-block">
             <h2 className="title2 text-white animation-text">How we work.</h2>
           </div>
-          <Link href="/" className='btn-link-custom'>
-            Get in touch with us <FaArrowRight size={15} />
+          <Link href="/">
+            <a className='btn-link-custom'>
+              Get in touch with us <FaArrowRight size={15} />
+            </a>
           </Link>
         </div>
         <div className={style.tabSection}>

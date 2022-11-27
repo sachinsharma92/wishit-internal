@@ -1,24 +1,24 @@
 import React, { useEffect } from 'react'
-import { gsap } from "gsap";
+import gsap from "gsap/dist/gsap";
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaArrowDown } from "react-icons/fa";
 import style from "./style.module.scss"
 
 export default function HeroSection() {
+  const tl = gsap.timeline();
   useEffect(() => {
-    // const tl = gsap.timeline();
-    // tl.from(".animation-block .animation-text", 1.8, {
-    //   y: 100,
-    //   ease: "power4.out",
-    //   delay: 1,
-    //   skewY: 0,
-    //   stagger: {
-    //     amount: 0.3
-    //   },
-    //   autoAlpha: 0,
-    // })
-  }, [])
+    tl.from(".animation-block .animation-text", 1.4, {
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 7,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+    })
+  }, [tl])
 
   return (
     <section className={style.heroSection}>
@@ -34,8 +34,10 @@ export default function HeroSection() {
               </div>
             </h1>
             <div className={style.heroBtn}>
-              <Link href="/" className='btn btn-info btn-lg mt-5'>
-                View our work <FaArrowDown size={18} />
+              <Link href="/">
+                <a className='btn btn-info btn-lg mt-5'>
+                  View our work <FaArrowDown size={18} />
+                </a>
               </Link>
             </div>
           </div>

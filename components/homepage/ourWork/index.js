@@ -28,8 +28,10 @@ export default function OurWork() {
       <div className="container">
         <div className={style.heading}>
           <h2 className="title2 text-white">Some of our works...</h2>
-          <Link href="/" className='btn-link-custom'>
-            View More <FaArrowRight size={15} />
+          <Link href="/">
+            <a className='btn-link-custom'>
+              View More <FaArrowRight size={15} />
+            </a>
           </Link>
         </div>
         <div className="horizontal-card-slider">
@@ -40,8 +42,10 @@ export default function OurWork() {
                 <Card.Text>
                   {item.projectTitle}
                 </Card.Text>
-                <Link href="/" className='btn-link-custom'>
-                  View project <FaArrowRight size={15} />
+                <Link href="/">
+                  <a className='btn-link-custom'>
+                    View project <FaArrowRight size={15} />
+                  </a>
                 </Link>
               </Card.Body>
             </Card>
