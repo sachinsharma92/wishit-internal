@@ -1,17 +1,18 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { useRouter } from "next/router";
 
 export default function LayoutPrimary(props) {
   const router = useRouter();
+  const [toggle, setToggle] = useState(false);
 
   return (
     <div>
       {/* Main Header */}
       <header>
-        <nav className="navbar navbar-expand-lg sticky-top navbar-custom">
+        <nav className="navbar navbar-expand-lg navbar-custom">
           <div className="container">
             <div className='navbar-row'>
               <Link className="navbar-brand" href="/">
@@ -22,10 +23,12 @@ export default function LayoutPrimary(props) {
                   height={28}
                 />
               </Link>
-              <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+              <button onClick={() => setToggle(!toggle)} className={`navbar-toggler ${toggle ? "active-toggle" : ''}`}>
+                <div className="line-1"></div>
+                <div className="line-2"></div>
+                <div className="line-3"></div>
               </button>
-              <div className="collapse navbar-collapse">
+              <div className={`navbar-collapse ${toggle ? "navbar-collapsed" : ''}`}>
                 <ul className="navbar-nav ml-auto">
                   <li className="nav-item">
                     <Link href="/" className={`nav-link ${router.pathname == "/" ? "active" : ""}`}>

@@ -7,23 +7,23 @@ import style from "./style.module.scss"
 
 export default function HeroSection() {
   useEffect(() => {
-    const tl = gsap.timeline();
-    tl.from(".animation-block .animation-text", 1.8, {
-      y: 100,
-      ease: "power4.out",
-      delay: 1,
-      skewY: 0,
-      stagger: {
-        amount: 0.3
-      },
-      autoAlpha: 0,
-    })
+    // const tl = gsap.timeline();
+    // tl.from(".animation-block .animation-text", 1.8, {
+    //   y: 100,
+    //   ease: "power4.out",
+    //   delay: 1,
+    //   skewY: 0,
+    //   stagger: {
+    //     amount: 0.3
+    //   },
+    //   autoAlpha: 0,
+    // })
   }, [])
 
   return (
     <section className={style.heroSection}>
       <div className="container">
-        <div className="row align-items-center">
+        <div className={`${style.rowCustom} row`}>
           <div className="col-sm-6">
             <h1 className="text-white">
               <div className='animation-block'>
@@ -45,6 +45,7 @@ export default function HeroSection() {
               alt="Picture of the author"
               width={639}
               height={360}
+              className={style.heroImage}
             />
           </div>
         </div>

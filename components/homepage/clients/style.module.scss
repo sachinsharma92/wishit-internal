@@ -4,8 +4,8 @@
 
 // heroSection
 .clients {
-  height: 100vh;
-  padding: 120px 0;
+  min-height: 100vh;
+  padding: 120px 0 0;
   position: relative;
 
   &::before {
@@ -15,6 +15,8 @@
     width: 100%;
     height: 100%;
     background: url("/images/bg/lines-graphic.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
     content: "";
   }
 
@@ -27,6 +29,12 @@
     margin: 0 auto;
     text-align: center;
     position: relative;
+
+    @include mobile {
+      max-width: 100%;
+      align-items: flex-start;
+      text-align: left;
+    }
   }
 
   .upDownGrid {

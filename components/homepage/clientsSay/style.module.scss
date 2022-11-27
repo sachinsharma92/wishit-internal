@@ -4,9 +4,13 @@
 
 // heroSection
 .clientsSay {
-  height: 100vh;
+  min-height: 100vh;
   padding: 120px 0;
   position: relative;
+
+  @include mobile {
+    padding: 50px 0 120px;
+  }
 
   .heading {
     display: flex;

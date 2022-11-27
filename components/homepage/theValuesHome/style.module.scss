@@ -7,6 +7,10 @@
   padding: 0px 0 180px;
   position: relative;
 
+  @include mobile {
+    padding: 0px 0 80px;
+  }
+
   .heading {
     display: flex;
     align-items: center;
@@ -19,6 +23,11 @@
   }
 
   .imgItem {
+    @include mobile {
+      text-align: center;
+      max-width: 90%;
+      margin: 0 auto 50px;
+    }
   }
 
   .content {
