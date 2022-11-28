@@ -7,7 +7,7 @@
   margin: 108px 0 218px;
 
   @include mobile {
-    margin: 50px 0 108px;
+    margin: 0px 0 80px;
 
     .heroImage {
       width: 100%;
@@ -27,6 +27,11 @@
   .imgBox {
     position: relative;
     height: 360px;
+
+    @include mobile {
+      height: 230px;
+      margin-bottom: 30px;
+    }
 
     img {
       position: absolute;

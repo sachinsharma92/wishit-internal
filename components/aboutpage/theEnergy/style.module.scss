@@ -6,15 +6,27 @@
 .theEnergy {
   margin: 108px 0 218px;
 
+  @include mobile {
+    margin: 50px 0 0;
+  }
+
   .description {
     font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: $white;
+
+    @include mobile {
+      margin-top: 20px;
+    }
   }
 
   .counterSection {
     margin-top: 61px;
+
+    @include mobile {
+      margin-top: 30px;
+    }
   }
 
   .titleSpace {
@@ -24,10 +36,19 @@
   .ourMissionVision {
     margin-top: 160px;
 
+    @include mobile {
+      margin-top: 50px;
+    }
+
     .cardCustom {
       background: $bg-surface2;
       padding: 40px 32px;
       border-radius: $radius-primary;
+
+      @include mobile {
+        margin-bottom: 30px;
+        padding: 20px;
+      }
     }
   }
 

@@ -18,9 +18,7 @@ export default function PortfolioDetail() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-
     let revealContainers = document.querySelectorAll(".reveal");
-
     revealContainers.forEach((container) => {
       let image = container.querySelector("img");
       let tl = gsap.timeline({
@@ -71,15 +69,15 @@ export default function PortfolioDetail() {
 
                   <div className={style.cardRowInfo}>
                     <div>
-                      <div className="subtext">Client</div>
+                      <div className={`subtext`}>Client</div>
                       <div className="text2 text-medium mt-2">studytorch.com</div>
                     </div>
                     <div>
-                      <div className="subtext">Service</div>
+                      <div className={`subtext`}>Service</div>
                       <div className="text2 text-medium mt-2">Product Design</div>
                     </div>
                     <div>
-                      <div className="subtext">Deliverable</div>
+                      <div className={`subtext`}>Deliverable</div>
                       <div className="text2 text-medium mt-2">UI Screens, UX Flow & Prototype</div>
                     </div>
                   </div>

@@ -21,7 +21,7 @@ export default function HeroServiceSection() {
   return (
     <section className={style.heroServiceSection}>
       <div className="container">
-        <div className="row align-items-center">
+        <div className={`${style.rowCustom} row align-items-center`}>
           <div className="col-sm-6">
             <h1 className="text-white text-center">
               <div className='animation-block'>
@@ -33,14 +33,16 @@ export default function HeroServiceSection() {
             </h1>
           </div>
           <div className="col-sm-6">
-            <Image
-              src="/images/hero-img-2.svg"
-              alt="Picture of the author"
-              width={639}
-              height={360}
-              data-aos="zoom-in"
-              data-aos-duration="600"
-            />
+            <div className={style.imgStyle}>
+              <Image
+                src="/images/hero-img-2.svg"
+                alt="Picture of the author"
+                width={639}
+                height={360}
+                data-aos="zoom-in"
+                data-aos-duration="600"
+              />
+            </div>
           </div>
         </div>
       </div>

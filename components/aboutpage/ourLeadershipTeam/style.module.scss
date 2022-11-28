@@ -13,16 +13,40 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+
+    @include mobile {
+      align-items: flex-start;
+    }
+  }
+
+  .titleStyle {
+    text-align: center;
+
+    @include mobile {
+      text-align: left;
+    }
   }
 
   .subtextCustom {
     max-width: 65%;
     text-align: center;
     margin: 16px auto 0;
+
+    @include mobile {
+      max-width: 100%;
+      text-align: left;
+    }
   }
 
   .trustSec {
     margin-top: 80px;
+
+    .customRow {
+      @include mobile {
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
 
   .imgItem {

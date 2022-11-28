@@ -77,8 +77,10 @@ export default function TechnologyStack() {
             </div>
           </h2>
           <Link href="/">
-            <a className='btn-link-custom'>
-              View All tech<FaArrowRight size={15} />
+            <a className='btn-link-custom animation-block'>
+              <div className='animation-Technology'>
+                View All tech<FaArrowRight size={15} />
+              </div>
             </a>
           </Link>
         </div>

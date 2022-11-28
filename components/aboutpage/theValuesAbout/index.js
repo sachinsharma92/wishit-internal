@@ -74,7 +74,7 @@ export default function TheValuesAbout() {
           <div className={style.trustSec}>
             <div className="row gx-5 gy-5">
               {imageGallery.map((item, index) => (
-                <div key={index} className='col-sm-4'>
+                <div key={index} className='col-6 col-sm-4'>
                   <div className={style.imgItem}>
                     <Image
                       src={item.imgUrl}

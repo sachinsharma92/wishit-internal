@@ -1,19 +1,21 @@
-import React, { useState } from 'react'
+import gsap from 'gsap';
+import React, { useEffect } from 'react'
 import style from "./style.module.scss"
 
 export default function ContactUs() {
-  const [validated, setValidated] = useState(false);
-
-  const handleSubmit = (event) => {
-    const form = event.currentTarget;
-    if (form.checkValidity() === false) {
-      event.preventDefault();
-      event.stopPropagation();
-    }
-
-    setValidated(true);
-  };
-
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".animation-block .animation-contact", 1.4, {
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 0,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+    })
+  }, [])
 
   return (
     <section className={style.contactUs}>
@@ -21,8 +23,12 @@ export default function ContactUs() {
         <div className="row align-items-center">
           <div className="col-sm-12">
             <h1 className="text-white text-center">
-              <div className="title2">Have a Project ?</div>
-              <div className="title2"><span className='text-gradient'>contact us</span></div>
+              <div className='animation-block'>
+                <div className="title2 animation-contact">Have a Project ?</div>
+              </div>
+              <div className='animation-block'>
+                <div className="title2 animation-contact"><span className='text-gradient'>contact us</span></div>
+              </div>
             </h1>
           </div>
         </div>

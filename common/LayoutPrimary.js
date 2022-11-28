@@ -9,19 +9,20 @@ export default function LayoutPrimary(props) {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div>
+    <div className='main-inner-container'>
       {/* Main Header */}
       <header>
         <nav className="navbar navbar-expand-lg navbar-custom">
           <div className="container">
             <div className='navbar-row'>
-              <Link href="/" className="navbar-brand" >
-                <a>
+              <Link href="/" >
+                <a className="navbar-brand">
                   <Image
                     src="/images/logo.svg"
-                    alt="Picture of the author"
-                    width={110}
-                    height={28}
+                    alt="theme logo"
+                    layout='fill'
+                  // width={110}
+                  // height={28}
                   />
                 </a>
               </Link>
@@ -134,24 +135,36 @@ export default function LayoutPrimary(props) {
               </div>
               <div className="col-sm-8 text-right">
                 <ul className="footer-nav">
-                  <a href="/" className='nav-link'>
-                    Home
-                  </a>
-                  <a href="/" className='nav-link'>
-                    About us
-                  </a>
-                  <a href="/" className='nav-link'>
-                    Features
-                  </a>
-                  <a href="/" className='nav-link'>
-                    Pricing
-                  </a>
-                  <a href="/" className='nav-link'>
-                    FAQ
-                  </a>
-                  <a href="/" className='nav-link'>
-                    Blog
-                  </a>
+                  <Link href="/">
+                    <a className='nav-link'>
+                      Home
+                    </a>
+                  </Link>
+                  <Link href="/about">
+                    <a className='nav-link'>
+                      About us
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a className='nav-link'>
+                      Features
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a className='nav-link'>
+                      Pricing
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a className='nav-link'>
+                      FAQ
+                    </a>
+                  </Link>
+                  <Link href="/">
+                    <a className='nav-link'>
+                      Blog
+                    </a>
+                  </Link>
                 </ul>
               </div>
             </div>

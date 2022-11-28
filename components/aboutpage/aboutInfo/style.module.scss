@@ -6,10 +6,18 @@
 .aboutInfo {
   margin-top: 160px;
 
+  @include mobile {
+    margin-top: 120px;
+  }
+
   .textSection {
     padding: 64px 80px 47px;
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+      padding: 30px 20px;
+    }
   }
 
   .aboutInfo {
@@ -22,6 +30,18 @@
   .banner {
     height: 340px;
     background-size: cover;
+
+    @include mobile {
+      height: 140px;
+    }
+  }
+
+  .makesSec {
+    display: flex;
+
+    @include mobile {
+      flex-direction: column;
+    }
   }
 
   .textFocus {
@@ -33,5 +53,10 @@
 
   .titleCustom {
     margin: 21px 0 17px;
+
+    @include mobile {
+      font-size: 20px;
+      margin: 10px 0 17px;
+    }
   }
 }

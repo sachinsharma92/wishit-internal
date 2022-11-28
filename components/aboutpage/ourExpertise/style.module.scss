@@ -7,6 +7,10 @@
   background: $bg-surface2;
   padding: 90px 0;
 
+  @include mobile {
+    margin: 50px 0;
+  }
+
   .subtextCustom {
     max-width: 90%;
   }
@@ -20,6 +24,11 @@
     flex-direction: column;
     gap: 20px 0;
     padding-left: 100px;
+
+    @include mobile {
+      padding-left: 0;
+      margin-top: 30px;
+    }
   }
 
   .cardItem {
@@ -29,6 +38,10 @@
     display: flex;
     align-items: center;
     gap: 0 30px;
+
+    @include mobile {
+      padding: 20px;
+    }
   }
 
   .iconBox {
@@ -39,8 +52,5 @@
     align-items: center;
     justify-content: center;
     background: $bg-surface4;
-
-    img {
-    }
   }
 }

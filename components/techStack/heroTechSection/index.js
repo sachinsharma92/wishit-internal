@@ -18,36 +18,44 @@ export default function HeroTechSection() {
           techImages: [
             {
               imageUrl: '/icons/technology/angular.svg',
-              techTitle: 'Angular'
+              techTitle: 'Angular',
+              animationDuration: 500,
             },
             {
               imageUrl: '/icons/technology/react.svg',
-              techTitle: 'React'
+              techTitle: 'React',
+              animationDuration: 600,
             },
             {
               imageUrl: '/icons/technology/css3.svg',
-              techTitle: 'CSS3'
+              techTitle: 'CSS3',
+              animationDuration: 700,
             },
             {
               imageUrl: '/icons/technology/vue.svg',
-              techTitle: 'Vue.js'
+              techTitle: 'Vue.js',
+              animationDuration: 800,
             },
             {
               imageUrl: '/icons/technology/nextjs.svg',
-              techTitle: 'Next.js'
+              techTitle: 'Next.js',
+              animationDuration: 900,
             },
 
             {
               imageUrl: '/icons/technology/jquery.svg',
-              techTitle: 'JQuery'
+              techTitle: 'JQuery',
+              animationDuration: 1000,
             },
             {
               imageUrl: '/icons/technology/bootstrap.svg',
-              techTitle: 'Bootstrap'
+              techTitle: 'Bootstrap',
+              animationDuration: 1100,
             },
             {
               imageUrl: '/icons/technology/html5.svg',
-              techTitle: 'HTML5'
+              techTitle: 'HTML5',
+              animationDuration: 1200,
             }
           ]
         },
@@ -207,7 +215,7 @@ export default function HeroTechSection() {
                             <ul className={style.techList}>
                               {techDev.techImages.map((techImage, index) => {
                                 return (
-                                  <li key={index}>
+                                  <li key={index} data-aos="zoom-in" data-aos-duration={techImage.animationDuration}>
                                     <Image
                                       src={techImage.imageUrl}
                                       alt="Picture of the author"

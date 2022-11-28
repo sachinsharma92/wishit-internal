@@ -21,5 +21,9 @@
 
   .subtextInner {
     max-width: 85%;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 }

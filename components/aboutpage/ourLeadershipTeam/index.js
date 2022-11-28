@@ -43,7 +43,7 @@ export default function OurLeadershipTeam() {
           <div className="row">
             <div className='col-sm-12'>
               <div className='animation-block'>
-                <h3 className="title3 text-white text-center animation-leadership">
+                <h3 className={`${style.titleStyle} title3 text-white animation-leadership`}>
                   Our Leadership Team
                 </h3>
               </div>
@@ -53,9 +53,9 @@ export default function OurLeadershipTeam() {
             </div>
           </div>
           <div className={style.trustSec}>
-            <div className="row gx-5 gy-5">
+            <div className={`${style.customRow} row gx-5 gy-5`}>
               {imageGallery.map((item, index) => (
-                <div key={index} className='col-sm-4'>
+                <div key={index} className='col-6 col-sm-4'>
                   <div className={style.imgItem}>
                     <div className={style.imgBox}>
                       <Image

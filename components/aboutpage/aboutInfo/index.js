@@ -38,7 +38,7 @@ export default function AboutInfo() {
                   What Makes us special ?
                 </div>
 
-                <div className='d-flex'>
+                <div className={style.makesSec}>
                   <div>
                     <h4 className={`${style.titleCustom} title4 text-white`}>Goal focussed</h4>
                     <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>

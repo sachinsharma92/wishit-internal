@@ -5,8 +5,16 @@
 .portfolioDetail {
   margin: 100px 0;
 
+  @include mobile {
+    margin: 50px 0 0;
+  }
+
   .customContainer {
     max-width: 75%;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   .cardRowSection {
@@ -34,9 +42,17 @@
     position: relative;
     margin: 80px 0 40px;
 
+    @include mobile {
+      margin: 30px 0;
+    }
+
     .cardRowBanner {
       width: 100%;
       min-height: 558px;
+
+      @include mobile {
+        min-height: 180px;
+      }
 
       img {
         position: absolute;
@@ -59,6 +75,10 @@
     align-items: center;
     justify-content: space-between;
 
+    @include mobile {
+      flex-direction: column;
+    }
+
     .webisteLink {
       color: $white;
       text-decoration: none;
@@ -73,6 +93,11 @@
     max-width: 70%;
     opacity: 0.7;
     margin-top: 40px;
+
+    @include mobile {
+      max-width: 100%;
+      margin-top: 20px;
+    }
   }
 
   .cardRowInfo {
@@ -80,6 +105,13 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 112px;
+
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px 0;
+      margin-bottom: 50px;
+    }
   }
 
   .listStyle {
@@ -93,8 +125,24 @@
 
   // detailSection
   .detailSection {
+    display: flex;
+    flex-direction: column;
+
     .rowCustom {
       margin-bottom: 82px;
+      display: flex;
+      flex-direction: column;
+
+      @include mobile {
+        margin-bottom: 20px;
+        gap: 20px 0;
+      }
+    }
+  }
+
+  .subtextInfo {
+    @include mobile {
+      margin-bottom: 20px;
     }
   }
 
@@ -108,12 +156,23 @@
     max-width: 90%;
     margin: 0 auto;
 
+    @include mobile {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     .keywordList {
       list-style: none;
       padding: 0;
       display: flex;
       align-items: center;
       gap: 0 62px;
+
+      @include mobile {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
 
       a {
         font-weight: 500;

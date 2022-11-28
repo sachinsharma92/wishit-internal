@@ -7,6 +7,22 @@
   position: relative;
   z-index: 1;
 
+  @include mobile {
+    padding: 120px 0 100px;
+  }
+
+  .rowCustom {
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .imgStyle {
+    @include mobile {
+      margin-bottom: 50px;
+    }
+  }
+
   .heroBtn {
     display: flex;
 

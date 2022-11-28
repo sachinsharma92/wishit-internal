@@ -9,6 +9,10 @@
   background-position: bottom center;
   background-repeat: no-repeat;
 
+  @include mobile {
+    padding: 0px 0 80px;
+  }
+
   .heading {
     display: flex;
     align-items: center;

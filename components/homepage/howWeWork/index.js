@@ -38,8 +38,10 @@ export default function HowWeWork() {
             <h2 className="title2 text-white animation-how-work">How we work.</h2>
           </div>
           <Link href="/">
-            <a className='btn-link-custom'>
-              Get in touch with us <FaArrowRight size={15} />
+            <a className='btn-link-custom animation-block'>
+              <div className="animation-how-work">
+                Get in touch with us <FaArrowRight size={15} />
+              </div>
             </a>
           </Link>
         </div>
