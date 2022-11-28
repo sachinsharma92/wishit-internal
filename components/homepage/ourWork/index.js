@@ -50,7 +50,7 @@ export default function OurWork() {
 
     }
 
-  }, [])
+  }, [LargeDevice])
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
