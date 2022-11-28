@@ -60,8 +60,8 @@ export default function LayoutPrimary(props) {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link href="/tech-stack">
-                      <a className={`nav-link ${router.pathname == "/tech-stack" ? "active" : ""}`}>
+                    <Link href="/technology">
+                      <a className={`nav-link ${router.pathname == "/technology" ? "active" : ""}`}>
                         Technology Stack
                       </a>
                     </Link>
