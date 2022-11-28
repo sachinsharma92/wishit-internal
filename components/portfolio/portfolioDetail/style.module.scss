@@ -3,22 +3,15 @@
 @import "../../../styles/variables//mixins";
 
 .portfolioDetail {
-  margin: 100px 0;
+  margin: 160px 0 50px;
 
   @include mobile {
     margin: 50px 0 0;
   }
 
-  .customContainer {
-    max-width: 75%;
-
-    @include mobile {
-      max-width: 100%;
-    }
-  }
-
   .cardRowSection {
-    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
   }
 
   .titleCustom {
@@ -29,6 +22,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 50px;
   }
 
   .headingRow {
@@ -40,7 +34,7 @@
     border-radius: $radius-primary;
     overflow: hidden;
     position: relative;
-    margin: 80px 0 40px;
+    margin: 30px 0 40px;
 
     @include mobile {
       margin: 30px 0;
@@ -127,11 +121,10 @@
   .detailSection {
     display: flex;
     flex-direction: column;
+    gap: 40px 0;
 
     .rowCustom {
-      margin-bottom: 82px;
       display: flex;
-      flex-direction: column;
 
       @include mobile {
         margin-bottom: 20px;

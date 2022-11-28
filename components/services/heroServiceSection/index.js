@@ -18,6 +18,15 @@ export default function HeroServiceSection() {
     })
   }, [])
 
+  useEffect(() => {
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal(".scaleUpService", {
+      duration: 4000,
+      scale: 0.75
+    });
+  }, [])
+
+
   return (
     <section className={style.heroServiceSection}>
       <div className="container">
@@ -33,14 +42,12 @@ export default function HeroServiceSection() {
             </h1>
           </div>
           <div className="col-sm-6">
-            <div className={style.imgStyle}>
+            <div className={`${style.imgStyle} scaleUpService`}>
               <Image
                 src="/images/hero-img-2.svg"
                 alt="Picture of the author"
                 width={639}
                 height={360}
-                data-aos="zoom-in"
-                data-aos-duration="600"
               />
             </div>
           </div>

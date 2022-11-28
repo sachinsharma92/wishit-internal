@@ -19,6 +19,14 @@ export default function HeroTechSection() {
     })
   }, [])
 
+  useEffect(() => {
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal(".scaleUpTech", {
+      duration: 4000,
+      scale: 0.75
+    });
+  }, [])
+
 
 
   return (
@@ -39,13 +47,11 @@ export default function HeroTechSection() {
             </div>
           </div>
           <div className="col-sm-6">
-            <div className={`${style.imageBox} reveal`}>
+            <div className={`${style.imageBox} scaleUpTech`}>
               <Image
                 src="/images/hero-img-3.svg"
                 alt="Picture of the author"
                 layout="fill"
-                data-aos="zoom-in"
-                data-aos-duration="600"
               />
             </div>
           </div>

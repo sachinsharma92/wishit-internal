@@ -20,34 +20,44 @@ export default function HeroSection() {
     })
   }, [tl])
 
-
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-
-    let revealContainers = document.querySelectorAll(".reveal");
-
-    revealContainers.forEach((container) => {
-      let image = container.querySelector("img");
-      let tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: container,
-          start: "top 120%",
-          toggleActions: "play none none reverse"
-        }
-      });
-
-      tl.set(container, { autoAlpha: 1 });
-      tl.from(container, 3, {
-        yPercent: 100,
-        ease: "power4.out",
-      });
-      tl.from(image, 3, {
-        yPercent: -100,
-        delay: -3,
-        ease: "power4.out",
-      });
+    ScrollReveal({ reset: true });
+    ScrollReveal().reveal(".scaleUpHome", {
+      duration: 4000,
+      scale: 0.75
     });
   }, [])
+
+
+
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+
+  //   let revealContainers = document.querySelectorAll(".reveal");
+
+  //   revealContainers.forEach((container) => {
+  //     let image = container.querySelector("img");
+  //     let tl = gsap.timeline({
+  //       scrollTrigger: {
+  //         trigger: container,
+  //         toggleActions: "restart none none reset"
+  //       }
+  //     });
+
+  //     tl.set(container, { autoAlpha: 1 });
+  //     tl.from(container, 1.5, {
+  //       xPercent: -100,
+  //       ease: Power2.out
+  //     });
+  //     tl.from(image, 1.5, {
+  //       xPercent: 100,
+  //       scale: 1.3,
+  //       delay: -1.5,
+  //       ease: Power2.out
+  //     });
+  //   });
+
+  // }, [])
 
 
   return (
@@ -74,7 +84,7 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="col-sm-6">
-            <div className={`${style.imgBox} reveal`}>
+            <div className={`${style.imgBox} scaleUpHome`}>
               <Image
                 src="/images/hero-img.svg"
                 alt="Picture of the author"

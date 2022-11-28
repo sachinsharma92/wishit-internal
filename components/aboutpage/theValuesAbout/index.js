@@ -72,7 +72,7 @@ export default function TheValuesAbout() {
             </div>
           </div>
           <div className={style.trustSec}>
-            <div className="row gx-5 gy-5">
+            <div className={`${style.rowCustom} row`}>
               {imageGallery.map((item, index) => (
                 <div key={index} className='col-6 col-sm-4'>
                   <div className={style.imgItem}>
@@ -84,7 +84,7 @@ export default function TheValuesAbout() {
                     />
                     <div className={style.content}>
                       <h4 className="text2 text-white">{item.title}</h4>
-                      <p className="subtext mb-0">{item.subText}</p>
+                      <p className={`${style.subTextCustom} subtext mb-0`}>{item.subText}</p>
                     </div>
                   </div>
                 </div>

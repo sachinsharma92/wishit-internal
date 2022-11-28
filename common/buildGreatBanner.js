@@ -5,11 +5,11 @@ import React, { useEffect } from 'react'
 export default function BuildGreatBanner() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.from(".animation-block .animation-build-great", 1.4, {
+    gsap.from(".animation-block .animation-build-great", 1.8, {
       y: 100,
       ease: "power4.out",
       delay: 1,
-      skewY: 7,
+      skewY: 0,
       stagger: {
         amount: 0.3
       },
@@ -22,21 +22,19 @@ export default function BuildGreatBanner() {
     })
   }, [])
   return (
-    <div id='buildGreat' className="banner-style-section">
-      <div className="container">
-        <div className='build-great-banner'>
-          <div className='content-wrapper'>
-            <div className='content-section'>
-              <div className='animation-block'>
-                <h4 className="title4 animation-build-great">Let&apos;s build something great together</h4>
+    <div id='buildGreat'>
+      <div className='animation-block'>
+        <div className="banner-style-section animation-build-great">
+          <div className="container">
+            <div className='build-great-banner'>
+              <div className='content-wrapper'>
+                <div className='content-section'>
+                  <h4 className="title4">Let&apos;s build something great together</h4>
+                  <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                </div>
               </div>
-              <div className='animation-block'>
-                <p className="subtext animation-build-great">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
-              </div>
-            </div>
-            <div className='animation-block'>
               <Link href="/">
-                <a className='btn btn-info animation-build-great'>
+                <a className='btn btn-info'>
                   Get Started
                 </a>
               </Link>

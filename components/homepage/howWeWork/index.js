@@ -7,7 +7,6 @@ import gsap from 'gsap';
 
 export default function HowWeWork() {
   const [count, setCount] = useState(5);
-
   const [activeTitle, setActiveTitle] = useState(1)
 
   const dataList = [
@@ -86,10 +85,6 @@ export default function HowWeWork() {
       },
     })
   }, [])
-
-
-
-
 
   return (
     <section id='howWeWork' className={`${style.howWeWork} tab-vertical-image`}>

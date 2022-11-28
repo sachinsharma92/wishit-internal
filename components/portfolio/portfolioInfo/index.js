@@ -28,6 +28,13 @@ export default function PortfolioInfo() {
       websiteUrl: 'www.website.com',
       projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.'
     },
+    {
+      projectBanner: '/images/banners/one-tracker.jpg',
+      projectName: 'One Tracker',
+      projectSubtile: 'Add project sub-title',
+      websiteUrl: 'www.website.com',
+      projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.'
+    },
   ];
 
   useEffect(() => {

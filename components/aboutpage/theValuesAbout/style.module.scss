@@ -29,5 +29,14 @@
 
   .content {
     margin-top: 16px;
+    max-width: 70%;
+  }
+
+  .subTextCustom {
+    opacity: 0.7;
+  }
+
+  .rowCustom {
+    gap: 88px 0;
   }
 }
