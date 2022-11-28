@@ -42,7 +42,7 @@ export default function TheEnergy() {
         <div className={style.counterSection}>
           <div className="row align-items-center">
             {experienceData.map((item, index) => (
-              <div key={index} className="col-sm-3">
+              <div key={index} className="col-sm-3" data-aos="zoom-in" data-aos-duration="1000">
                 <div className="title3 text-primary">{item.numbers}</div>
                 <h4 className={`${style.titleSpace} title4 text-white`}>{item.title}</h4>
                 <p className="subtext text-white">{item.description}</p>

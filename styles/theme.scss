@@ -422,8 +422,28 @@ body {
     background: none;
     border-radius: 16px;
 
+    &:hover img {
+      transform: scale(1.2);
+    }
+
     @include mobile {
       min-width: 80%;
+    }
+  }
+
+  .card-image-box {
+    height: 502px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.5s ease-in-out;
     }
   }
 

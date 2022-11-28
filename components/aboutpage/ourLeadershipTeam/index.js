@@ -1,5 +1,6 @@
+import gsap from 'gsap';
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect } from 'react'
 import style from "./style.module.scss"
 
 export default function OurLeadershipTeam() {
@@ -21,16 +22,34 @@ export default function OurLeadershipTeam() {
     },
   ];
 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".animation-block .animation-leadership", 1.4, {
+      y: 100,
+      ease: "power4.out",
+      delay: 1,
+      skewY: 0,
+      stagger: {
+        amount: 0.3
+      },
+      autoAlpha: 0,
+    })
+  }, [])
+
   return (
     <section className={`${style.theValuesAbout}`}>
       <div className="container">
         <div className="client-say">
           <div className="row">
             <div className='col-sm-12'>
-              <h3 className="title3 text-white text-center">
-                Our Leadership Team
-              </h3>
-              <p className={`${style.subtextCustom} subtext`}>Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.</p>
+              <div className='animation-block'>
+                <h3 className="title3 text-white text-center animation-leadership">
+                  Our Leadership Team
+                </h3>
+              </div>
+              <div className='animation-block'>
+                <p className={`${style.subtextCustom} subtext animation-leadership`}>Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.</p>
+              </div>
             </div>
           </div>
           <div className={style.trustSec}>
@@ -44,6 +63,7 @@ export default function OurLeadershipTeam() {
                         alt="Picture of the author"
                         width={140}
                         height={140}
+                        layout="fill"
                       />
                     </div>
                     <div className={style.content}>

@@ -66,7 +66,9 @@ export default function TheValuesHome() {
             <div className="row gx-5">
               {imageGallery.map((item, index) => (
                 <div key={index} className='col-sm-4'>
-                  <div className={style.imgItem}>
+                  <div className={style.imgItem}
+                    data-aos="fade-up"
+                    data-aos-duration="1000">
                     <Image
                       src={item.imgUrl}
                       alt="Picture of the author"

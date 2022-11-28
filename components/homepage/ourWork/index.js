@@ -21,7 +21,7 @@ export default function OurWork() {
       projectTitle: 'Workhub office Webflow Webflow Design',
     },
     {
-      projectImage: '/images/banners/mealq.jpg',
+      projectImage: '/images/banners/one-tracker.jpg',
       projectTitle: 'Workhub office Webflow Webflow Design',
     }
   ]
@@ -78,7 +78,7 @@ export default function OurWork() {
           <div className='animation-block'>
             <h2 className="title2 text-white animation-title">Some of our works...</h2>
           </div>
-          <Link href="/">
+          <Link href="/portfolio">
             <a className='btn-link-custom'>
               View More <FaArrowRight size={15} />
             </a>
@@ -87,8 +87,10 @@ export default function OurWork() {
         <div id='slideContainer' className="horizontal-card-slider">
           {cardSlides.map((item, index) => (
             <Card key={index} className="card-custom">
-              <Card.Img variant="top" src={item.projectImage} />
-              <Card.Body>
+              <div className='card-image-box'>
+                <Card.Img variant="top" src={item.projectImage} className="card-image" />
+              </div>
+              <Card.Body className='card-body-custom'>
                 <Card.Text>
                   {item.projectTitle}
                 </Card.Text>

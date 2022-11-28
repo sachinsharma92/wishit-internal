@@ -77,7 +77,7 @@ export default function OurServices() {
           <div className="row gy-5 gx-5">
             {cardData.map((item, index) => (
               <div key={index} className="col-sm-4">
-                <div className={style.cardItem}>
+                <div className={style.cardItem} data-aos="flip-down" data-aos-duration={1000}>
                   <div className={style.iconBox}>
                     <Image
                       src={item.imgUrl}

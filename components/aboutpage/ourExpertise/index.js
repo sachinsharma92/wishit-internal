@@ -8,19 +8,22 @@ const cardData = [
     imgUrl: '/icons/timer.svg',
     numbers: '15+',
     title: 'On Time Delivery',
-    description: 'Through True Rich Attended does no end it his mother since real had half every him'
+    description: 'Through True Rich Attended does no end it his mother since real had half every him',
+    animationDuration: 500
   },
   {
     imgUrl: '/icons/like.svg',
     numbers: '500+',
     title: 'Clients served',
-    description: 'Through True Rich Attended does no end it his mother since real had half every him'
+    description: 'Through True Rich Attended does no end it his mother since real had half every him',
+    animationDuration: 800
   },
   {
     imgUrl: '/icons/support.svg',
     numbers: '34',
     title: 'Employees',
-    description: 'Through True Rich Attended does no end it his mother since real had half every him'
+    description: 'Through True Rich Attended does no end it his mother since real had half every him',
+    animationDuration: 1000
   },
 ]
 export default function OurExpertise() {
@@ -37,7 +40,7 @@ export default function OurExpertise() {
           <div className="col-sm-6">
             <div className={style.cardStyle}>
               {cardData.map((item, index) => (
-                <div key={index} className={style.cardItem}>
+                <div key={index} className={style.cardItem} data-aos="fade-left" data-aos-duration={item.animationDuration}>
                   <div className={style.iconBox}>
                     <Image
                       src={item.imgUrl}

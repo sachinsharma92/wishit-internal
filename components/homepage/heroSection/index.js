@@ -20,6 +20,36 @@ export default function HeroSection() {
     })
   }, [tl])
 
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let revealContainers = document.querySelectorAll(".reveal");
+
+    revealContainers.forEach((container) => {
+      let image = container.querySelector("img");
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          start: "top 120%",
+          toggleActions: "play none none reverse"
+        }
+      });
+
+      tl.set(container, { autoAlpha: 1 });
+      tl.from(container, 3, {
+        yPercent: 100,
+        ease: "power4.out",
+      });
+      tl.from(image, 3, {
+        yPercent: -100,
+        delay: -3,
+        ease: "power4.out",
+      });
+    });
+  }, [])
+
+
   return (
     <section className={style.heroSection}>
       <div className="container">
@@ -44,13 +74,13 @@ export default function HeroSection() {
             </div>
           </div>
           <div className="col-sm-6">
-            <Image
-              src="/images/hero-img.svg"
-              alt="Picture of the author"
-              width={639}
-              height={360}
-              className={style.heroImage}
-            />
+            <div className={`${style.imgBox} reveal`}>
+              <Image
+                src="/images/hero-img.svg"
+                alt="Picture of the author"
+                layout='fill'
+              />
+            </div>
           </div>
         </div>
       </div>

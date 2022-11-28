@@ -1,6 +1,7 @@
+import gsap from 'gsap'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { FaArrowRight } from 'react-icons/fa'
 import style from "./style.module.scss"
 
@@ -14,6 +15,34 @@ export default function PortfolioDetail() {
       projectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.'
     },
   ];
+
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    let revealContainers = document.querySelectorAll(".reveal");
+
+    revealContainers.forEach((container) => {
+      let image = container.querySelector("img");
+      let tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container,
+          toggleActions: "restart none none reset"
+        }
+      });
+
+      tl.set(container, { autoAlpha: 1 });
+      tl.from(container, 1.5, {
+        xPercent: -100,
+        ease: Power2.out
+      });
+      tl.from(image, 1.5, {
+        xPercent: 100,
+        scale: 1.3,
+        delay: -1.5,
+        ease: Power2.out
+      });
+    });
+  }, [])
 
   return (
     <section className={style.portfolioDetail}>
@@ -30,12 +59,14 @@ export default function PortfolioDetail() {
                     </div>
                   </div>
 
-                  <div className={style.cardRowBanner}>
-                    <Image
-                      src={item.projectBanner}
-                      alt="Picture of the author"
-                      layout='fill'
-                    />
+                  <div className={style.cardRowRadius}>
+                    <div className={`${style.cardRowBanner} reveal`}>
+                      <Image
+                        src={item.projectBanner}
+                        alt="Picture of the author"
+                        layout='fill'
+                      />
+                    </div>
                   </div>
 
                   <div className={style.cardRowInfo}>
@@ -64,12 +95,14 @@ export default function PortfolioDetail() {
                     </ul>
                   </div>
 
-                  <div className={style.cardRowBanner}>
-                    <Image
-                      src={item.projectBanner}
-                      alt="Picture of the author"
-                      layout='fill'
-                    />
+                  <div className={style.cardRowRadius}>
+                    <div className={`${style.cardRowBanner} reveal`}>
+                      <Image
+                        src={item.projectBanner}
+                        alt="Picture of the author"
+                        layout='fill'
+                      />
+                    </div>
                   </div>
 
                   <div className={style.detailSection}>
@@ -101,12 +134,14 @@ export default function PortfolioDetail() {
                     </div>
                   </div>
 
-                  <div className={style.cardRowBanner}>
-                    <Image
-                      src={item.projectBanner}
-                      alt="Picture of the author"
-                      layout='fill'
-                    />
+                  <div className={style.cardRowRadius}>
+                    <div className={`${style.cardRowBanner} reveal`}>
+                      <Image
+                        src={item.projectBanner}
+                        alt="Picture of the author"
+                        layout='fill'
+                      />
+                    </div>
                   </div>
 
 

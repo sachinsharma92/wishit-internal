@@ -38,6 +38,7 @@ export default function ClientsSay() {
     })
   }, [])
 
+
   return (
     <section id='clientSay' className={`${style.clientsSay}`}>
       <div className="container">
@@ -53,6 +54,8 @@ export default function ClientsSay() {
                       width={109}
                       height={109}
                       layout="fill"
+                      data-aos="fade-up"
+                      data-aos-duration="1000"
                     />
                   </div>
                 ))}
