@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import style from "./style.module.scss"
 
-export default function OurServices() {
+export default function OurExpertise() {
   const cardData = [
     {
       imgUrl: '/icons/services/icon1.svg',

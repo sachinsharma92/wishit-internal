@@ -5,6 +5,10 @@
 .heroTechSection {
   margin: 160px 0 50px;
 
+  @include mobile {
+    margin: 100px 0 50px;
+  }
+
   .heroBtn {
     display: flex;
 
@@ -17,32 +21,22 @@
   .titleCustom {
     margin-bottom: 10px;
     font-size: 48px;
-  }
+    line-height: 56px;
 
-  .iconSec {
-    display: flex;
-    gap: 0 18px;
-  }
-
-  .tectInfoSection {
-    margin-top: 69px;
-  }
-
-  .techListSection {
-    margin-top: 40px;
-
-    .techList {
-      padding: 0;
-      list-style: none;
-      display: flex;
-      gap: 0 49px;
-      text-align: center;
+    @include mobile {
+      font-size: 36px;
+      line-height: 46px;
     }
   }
 
   .imageBox {
     position: relative;
     height: 360px;
+
+    @include mobile {
+      height: 260px;
+      margin-bottom: 50px;
+    }
 
     img {
       position: absolute;
@@ -54,7 +48,9 @@
     }
   }
 
-  .techWrapper {
-    margin-bottom: 154px;
+  .rowCustom {
+    @include mobile {
+      flex-direction: column-reverse;
+    }
   }
 }
