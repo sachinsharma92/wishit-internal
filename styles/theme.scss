@@ -353,12 +353,24 @@ body {
 }
 // Tab Vertical
 .tab-vertical-image {
+  .custom-row {
+    @include mobile {
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
   .text4 {
     color: $text-secondary;
     line-height: 22px;
     margin-top: 16px;
     transition: all 0.5s ease-in-out;
-    display: none;
+    max-width: 60%;
+
+    @include mobile {
+      max-width: 90%;
+    }
   }
 
   .title3 {
@@ -367,57 +379,51 @@ body {
     margin: 0;
 
     @include mobile {
-      font-size: 30px;
     }
   }
 
-  .tab-content {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+  .list {
+    position: relative;
 
-  .nav-link {
-    color: $textmuted;
-    padding: 0;
+    @include mobile {
+      position: absolute;
+      opacity: 0;
+      width: 100%;
+      margin-top: 30px;
+    }
 
-    &.active {
-      background: none;
-
-      .title3 {
-        position: relative;
-        color: $theme-primary;
-
-        &::before {
-          position: absolute;
-          left: -21px;
-          top: 0;
-          bottom: 0;
-          margin: auto;
-          width: 4px;
-          height: 40px;
-          border-radius: 8px;
-          content: "";
-          background: $theme-primary;
-        }
+    .title3 {
+      &::before {
+        position: absolute;
+        left: -21px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 4px;
+        height: 40px;
+        border-radius: 8px;
+        content: "";
+        background: $theme-primary;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
 
-  .nav-pills {
-    gap: 20px 0;
-  }
-  .img-mobile {
-    display: none;
-  }
+  .active {
+    background: none;
 
-  .nav-pills [aria-selected="true"] {
-    .text4 {
-      display: block;
+    &.list {
+      opacity: 1;
     }
-    .img-mobile {
-      display: block;
+
+    .title3 {
+      position: relative;
+      color: $theme-primary;
+
+      &::before {
+        opacity: 1;
+      }
     }
   }
 }
