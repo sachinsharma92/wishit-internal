@@ -51,7 +51,6 @@ export default function HowWeWork() {
 
 
   const [imageSource, setImageSource] = useState(dataList[0].imgUrl);
-  const [animationActive, setAnimationActive] = useState(false);
 
   useEffect(() => {
     let ImageSourceInterval;

@@ -51,8 +51,6 @@ export default function ClientsSay() {
                     <Image
                       src={item}
                       alt="Picture of the author"
-                      width={109}
-                      height={109}
                       layout="fill"
                       data-aos="fade-up"
                       data-aos-duration="1000"
@@ -84,8 +82,7 @@ export default function ClientsSay() {
                         <Image
                           src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80"
                           alt="Picture of the author"
-                          width={60}
-                          height={60}
+                          layout="fill"
                         />
                       </div>
                       <div>

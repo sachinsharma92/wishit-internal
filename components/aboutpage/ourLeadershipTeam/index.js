@@ -61,8 +61,6 @@ export default function OurLeadershipTeam() {
                       <Image
                         src={item.imgUrl}
                         alt="Picture of the author"
-                        width={140}
-                        height={140}
                         layout="fill"
                       />
                     </div>
