@@ -21,8 +21,6 @@ export default function LayoutPrimary(props) {
                     src="/images/logo.svg"
                     alt="theme logo"
                     layout='fill'
-                  // width={110}
-                  // height={28}
                   />
                 </a>
               </Link>
