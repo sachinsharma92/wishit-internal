@@ -61,7 +61,7 @@ export default function OurExpertise() {
   ]
 
   return (
-    <section className={style.ourServices}>
+    <section className={style.ourExpertise}>
       <div className="container position-relative">
         <div className="row align-items-center">
           <div className="col-sm-6">
