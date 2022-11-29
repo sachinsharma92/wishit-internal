@@ -158,7 +158,7 @@ export default function StackSection() {
                         width={32}
                         height={32}
                       />
-                      <h4 className="text1 text-primary">{techMain.heading}</h4>
+                      <h4 className="text1 text-primary mb-0">{techMain.heading}</h4>
                     </div>
                     <p className="subtext mt-2">{techMain.description}</p>
                     {techMain.techDevs.map((techDev, index) => {

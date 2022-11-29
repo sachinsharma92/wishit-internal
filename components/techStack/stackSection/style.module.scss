@@ -18,6 +18,10 @@
 
   .tectInfoSection {
     margin-top: 69px;
+
+    @include mobile {
+      margin-top: 0px;
+    }
   }
 
   .techListSection {
