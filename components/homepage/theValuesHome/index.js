@@ -24,7 +24,7 @@ export default function TheValuesHome() {
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.from(".animation-block .animation-the-value", 1.4, {
+    gsap.from(".animation-block .animation-the-value-home", 1.4, {
       y: 100,
       ease: "power4.out",
       delay: 1,
@@ -47,15 +47,10 @@ export default function TheValuesHome() {
         <div className="client-say">
           <div className="row">
             <div className='col-sm-6'>
-
               <h3 className="title3 text-white">
                 <div className='animation-block'>
-                  <div className='animation-the-value'>
-                    The values that hold us
-                  </div>
-                </div>
-                <div className='animation-block'>
-                  <div className='animation-the-value'>
+                  <div className='animation-the-value-home'>
+                    The values that hold us <br className='d-none d-sm-block' />
                     true & to account
                   </div>
                 </div>

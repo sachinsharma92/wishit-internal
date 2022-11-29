@@ -37,7 +37,7 @@ export default function OurLeadershipTeam() {
   }, [])
 
   return (
-    <section className={`${style.theValuesAbout}`}>
+    <section className={`${style.ourLeadershipTeam}`}>
       <div className="container">
         <div className="client-say">
           <div className="row">

@@ -15,6 +15,10 @@
 
   .titleCustom {
     margin: 21px 0 17px;
+
+    @include mobile {
+      margin: 0px 0 7px;
+    }
   }
 
   .actionRow {
@@ -31,6 +35,10 @@
   .headingRow {
     border-left: 4px solid $theme-primary;
     padding-left: 32px;
+
+    @include mobile {
+      padding-left: 22px;
+    }
   }
 
   .cardRowRadius {

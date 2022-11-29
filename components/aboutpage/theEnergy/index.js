@@ -40,7 +40,7 @@ export default function TheEnergy() {
         </div>
 
         <div className={style.counterSection}>
-          <div className="row align-items-center">
+          <div className={`${style.rowCustom} row`}>
             {experienceData.map((item, index) => (
               <div key={index} className="col-sm-3" data-aos="zoom-in" data-aos-duration="1000">
                 <div className="title3 text-primary">{item.numbers}</div>

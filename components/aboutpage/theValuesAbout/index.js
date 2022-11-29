@@ -60,11 +60,7 @@ export default function TheValuesAbout() {
               <h3 className="title3 text-white">
                 <div className='animation-block'>
                   <div className='animation-the-values'>
-                    The values that hold us
-                  </div>
-                </div>
-                <div className='animation-block'>
-                  <div className='animation-the-values'>
+                    The values that hold us <br className='d-none d-sm-block' />
                     true & to account
                   </div>
                 </div>

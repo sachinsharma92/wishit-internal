@@ -24,12 +24,13 @@
     margin-top: 80px;
   }
 
-  .imgItem {
-  }
-
   .content {
     margin-top: 16px;
     max-width: 70%;
+
+    @include mobile {
+      max-width: 100%;
+    }
   }
 
   .subTextCustom {

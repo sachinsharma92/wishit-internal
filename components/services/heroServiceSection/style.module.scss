@@ -8,7 +8,7 @@
   z-index: 1;
 
   @include mobile {
-    padding: 120px 0 100px;
+    padding: 130px 0 100px;
   }
 
   .rowCustom {
@@ -19,7 +19,7 @@
 
   .imgStyle {
     @include mobile {
-      margin-bottom: 50px;
+      margin-bottom: 70px;
     }
   }
 
@@ -35,5 +35,6 @@
   .titleCustom {
     margin-bottom: 10px;
     font-size: 50px;
+    line-height: 40px;
   }
 }

@@ -11,13 +11,13 @@ export default function OurExpertise() {
       description: 'Through True Rich Attended does no end it his mother since real had half every him'
     },
     {
-      imgUrl: '/icons/services/icon1.svg',
+      imgUrl: '/icons/services/icon2.svg',
       numbers: '500+',
       title: 'Clients served',
       description: 'Through True Rich Attended does no end it his mother since real had half every him'
     },
     {
-      imgUrl: '/icons/services/icon1.svg',
+      imgUrl: '/icons/services/icon3.svg',
       numbers: '34',
       title: 'Employees',
       description: 'Through True Rich Attended does no end it his mother since real had half every him'
