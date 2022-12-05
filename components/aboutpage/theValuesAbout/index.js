@@ -8,32 +8,32 @@ export default function TheValuesAbout() {
     {
       imgUrl: '/icons/trust.svg',
       title: 'Trust',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      subText: 'Because we’ve been there and earned it. '
     },
     {
       imgUrl: '/icons/security.svg',
-      title: 'Security',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      title: 'Friendly support',
+      subText: 'Because we will be there for you at all stages of the procedure, and even after delivery.'
     },
     {
       imgUrl: '/icons/privacy.svg',
-      title: 'Privacy',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      title: 'Domain expertise',
+      subText: 'Because we have a tech-savvy crew.'
     },
     {
       imgUrl: '/icons/trust.svg',
-      title: 'Trust',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      title: 'Security',
+      subText: 'Because we will provide you cyber shield to save you from data theft. '
     },
     {
       imgUrl: '/icons/security.svg',
-      title: 'Security',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      title: 'Privacy',
+      subText: 'Because we are skilled at keeping your information and data secure. '
     },
     {
       imgUrl: '/icons/privacy.svg',
-      title: 'Privacy',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      title: 'On Budget',
+      subText: `Because we don't cost the earth.`
     }
   ];
 

@@ -13,7 +13,7 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          {/* <a rel="shortcut icon" href="/img/favicon.ico" /> */}
+          <a rel="shortcut icon" href="/favicon.png" />
           <meta
             name="keywords"
             content="Home | Wishit | Design Agency"

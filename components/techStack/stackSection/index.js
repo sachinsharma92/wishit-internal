@@ -9,12 +9,12 @@ export default function StackSection() {
     {
       id: 1,
       firstImgUrl: "/icons/web-dev.svg",
-      heading: 'Web Development',
-      description: "At WishIT, we design and develop websites and web apps that can make sure you’re seen and heard in the right circles",
+      heading: 'Web Developement',
+      description: "End-to-end custom web applications designed to address your unique business concerns",
       techDevs: [
         {
-          heading: 'Frontend Development',
-          description: "We love working with these Frontend frameworks and libraries",
+          heading: 'Front end Developmenet ',
+          description: "Frontend framework and libraries we love playing around.",
           techImages: [
             {
               imageUrl: '/icons/technology/angular.svg',
@@ -61,40 +61,39 @@ export default function StackSection() {
         },
         {
           heading: 'Backend Development',
-          description: "We enjoy extensive experience with these Backend frameworks and libraries",
+          description: "Backend framework and libraries we integrate for our extensive knowledge",
           techImages: [
             {
-              imageUrl: '/icons/technology/angular.svg',
-              techTitle: 'Angular'
-            },
-            {
-              imageUrl: '/icons/technology/react.svg',
-              techTitle: 'React'
-            },
-            {
-              imageUrl: '/icons/technology/css3.svg',
-              techTitle: 'CSS3'
-            },
-            {
-              imageUrl: '/icons/technology/vue.svg',
-              techTitle: 'Vue.js'
+              imageUrl: '/icons/technology/php.svg',
+              techTitle: 'PHP'
             },
             {
               imageUrl: '/icons/technology/nextjs.svg',
-              techTitle: 'Next.js'
-            },
-
-            {
-              imageUrl: '/icons/technology/jquery.svg',
-              techTitle: 'JQuery'
+              techTitle: 'ASP.net'
             },
             {
-              imageUrl: '/icons/technology/bootstrap.svg',
-              techTitle: 'Bootstrap'
+              imageUrl: '/icons/technology/c-sharp.svg',
+              techTitle: 'C#'
             },
             {
-              imageUrl: '/icons/technology/html5.svg',
-              techTitle: 'HTML5'
+              imageUrl: '/icons/technology/java.svg',
+              techTitle: 'Java & JEE'
+            },
+            {
+              imageUrl: '/icons/technology/python.svg',
+              techTitle: 'Python'
+            },
+            {
+              imageUrl: '/icons/technology/aws.svg',
+              techTitle: 'AWS'
+            },
+            {
+              imageUrl: '/icons/technology/mysql.svg',
+              techTitle: 'Postgre SQL'
+            },
+            {
+              imageUrl: '/icons/technology/postgre.svg',
+              techTitle: 'Postgre SQL'
             }
           ]
         }
@@ -104,25 +103,11 @@ export default function StackSection() {
       id: 2,
       firstImgUrl: "/icons/app-development.svg",
       heading: 'App Development',
-      description: "At WishIT, we design and develop websites and web apps that can make sure you’re seen and heard in the right circles",
+      description: "With WishIT transform your ideas into creative software solutions by leveraging best-in-class technologies.",
       techDevs: [
         {
-          heading: 'Native apps',
-          description: "We love working with these Frontend frameworks and libraries",
-          techImages: [
-            {
-              imageUrl: '/icons/technology/android.svg',
-              techTitle: 'Angular'
-            },
-            {
-              imageUrl: '/icons/technology/apple.svg',
-              techTitle: 'React'
-            },
-          ]
-        },
-        {
-          heading: 'Hybrid apps',
-          description: "We enjoy extensive experience with these Backend frameworks and libraries",
+          heading: 'Hybrid Apps',
+          description: "Hybrid platforms we prefer working with for simple, lightweight cross-platform apps.",
           techImages: [
             {
               imageUrl: '/icons/technology/ionic.svg',
@@ -137,7 +122,55 @@ export default function StackSection() {
               techTitle: 'Flutter'
             },
           ]
-        }
+        },
+        {
+          heading: 'Native apps',
+          description: "Native platform we rely on. ",
+          techImages: [
+            {
+              imageUrl: '/icons/technology/android.svg',
+              techTitle: 'Angular'
+            },
+            {
+              imageUrl: '/icons/technology/apple.svg',
+              techTitle: 'React'
+            },
+          ]
+        },
+      ],
+    },
+    {
+      id: 3,
+      firstImgUrl: "/icons/app-evelopment.svg",
+      heading: 'DevOps Services',
+      description: "Comprehensive DevOps services accelerate time to market.",
+      techDevs: [
+        {
+          heading: 'Technologies',
+          description: "Technologies we prefer ace or work. ",
+          techImages: [
+            {
+              imageUrl: '/icons/technology/npm.svg',
+              techTitle: 'NPM'
+            },
+            {
+              imageUrl: '/icons/technology/docker.svg',
+              techTitle: 'Docker'
+            },
+            {
+              imageUrl: '/icons/technology/gitlab.svg',
+              techTitle: 'Gitlab'
+            },
+            {
+              imageUrl: '/icons/technology/terraform.svg',
+              techTitle: 'Terraform'
+            },
+            {
+              imageUrl: '/icons/technology/azure.svg',
+              techTitle: 'Azure'
+            },
+          ]
+        },
       ],
     },
   ];

@@ -14,7 +14,7 @@ export default function AboutPage() {
       <TheEnergy />
       <OurExpertise />
       <TheValuesAbout />
-      <OurLeadershipTeam />
+      {/* <OurLeadershipTeam /> */}
       <BuildGreatBanner />
     </LayoutPrimary>
   )

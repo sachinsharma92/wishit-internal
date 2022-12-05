@@ -853,13 +853,13 @@ body {
 
   .card-contact {
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: $bodycolor;
     border-radius: 8px;
     min-height: 95px;
     padding: 21px 30px;
-    display: flex;
-    align-items: center;
-    gap: 0 64px;
+    gap: 20px 0;
     background: linear-gradient(
         0deg,
         rgba(255, 255, 255, 0.15),
@@ -880,6 +880,11 @@ body {
     .subtext {
       color: #0b2542;
     }
+  }
+
+  .flex-sec {
+    display: flex;
+    gap: 0 64px;
   }
   .max-subtext {
     max-width: 70%;
@@ -961,6 +966,11 @@ body {
         color: $theme-primary;
       }
     }
+  }
+
+  .email-text {
+    color: $text-dark;
+    text-decoration: none;
   }
 }
 
@@ -1073,4 +1083,21 @@ body {
       color: #5c6d7f;
     }
   }
+}
+
+// btn-scroll
+.btn-scroll {
+  background: $theme-primary;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 0;
+  border: none;
 }

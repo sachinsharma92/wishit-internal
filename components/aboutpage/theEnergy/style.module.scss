@@ -52,11 +52,16 @@
       background: $bg-surface2;
       padding: 40px 32px;
       border-radius: $radius-primary;
+      min-height: 230px;
 
       @include mobile {
         margin-bottom: 30px;
         padding: 20px;
       }
+    }
+
+    p {
+      max-width: 90%;
     }
   }
 

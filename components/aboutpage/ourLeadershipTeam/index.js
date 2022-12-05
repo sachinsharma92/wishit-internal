@@ -44,11 +44,11 @@ export default function OurLeadershipTeam() {
             <div className='col-sm-12'>
               <div className='animation-block'>
                 <h3 className={`${style.titleStyle} title3 text-white animation-leadership`}>
-                  Our Leadership Team
+                  Our Genius Genies
                 </h3>
               </div>
               <div className='animation-block'>
-                <p className={`${style.subtextCustom} subtext animation-leadership`}>Interdum ac tincidunt molestie facilisis. Nulla at erat odio bibendum diam quam. Scelerisque mus vel egestas justo, purus consequat nibh eget. Non risus feugiat porta integer.</p>
+                <p className={`${style.subtextCustom} subtext animation-leadership`}>The brains who keep the team and process like a well-oiled machine. </p>
               </div>
             </div>
           </div>

@@ -38,6 +38,7 @@
 
   .makesSec {
     display: flex;
+    gap: 0 40px;
 
     @include mobile {
       flex-direction: column;

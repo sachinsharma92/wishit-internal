@@ -13,37 +13,37 @@ export default function HowWeWork() {
     {
       imgUrl: "/images/services/discover.jpeg",
       title: "Discover",
-      description: "Lorem ipsum dolor sit amet consectetur. Magna tincidunt aliquet id ut convallis adipiscing sit. Mus ut amet eget senectus posuere. Quam nunc elementum ultricies eget vel.",
+      description: "Sticking with our clients, we gather information to determine your target audience, their issues, and your business's needs.",
       id: 1,
     },
     {
       imgUrl: "/images/services/design.webp",
       title: "Design",
-      description: "Lorem ipsum dolor sit amet consectetur. Magna tincidunt aliquet id ut convallis adipiscing sit. Mus ut amet eget senectus posuere. Quam nunc elementum ultricies eget vel.",
+      description: "With the help of our tech-savvy team, we produce/create outlines that are specifically tailored to your business's demands. ",
       id: 2,
     },
     {
       imgUrl: "/images/services/development.jpeg",
       title: "Development",
-      description: "Lorem ipsum dolor sit amet consectetur. Magna tincidunt aliquet id ut convallis adipiscing sit. Mus ut amet eget senectus posuere. Quam nunc elementum ultricies eget vel.",
+      description: "In this phase, we get the tech work started and create the application in accordance with the earlier design outline and laid-out specifications.",
       id: 3
     },
     {
       imgUrl: "/images/services/testing.webp",
       title: "Testing",
-      description: "Lorem ipsum dolor sit amet consectetur. Magna tincidunt aliquet id ut convallis adipiscing sit. Mus ut amet eget senectus posuere. Quam nunc elementum ultricies eget vel.",
+      description: "Our programmers fine-tooth comb the software to ensure that there are no bugs and that the end-user experience won't be compromised in any way.",
       id: 4
     },
     {
       imgUrl: "/images/services/deployment.webp",
       title: "Deployment",
-      description: "Lorem ipsum dolor sit amet consectetur. Magna tincidunt aliquet id ut convallis adipiscing sit. Mus ut amet eget senectus posuere. Quam nunc elementum ultricies eget vel.",
+      description: "The tried and tested software comes to an end and goes into the deployment phase. Here we make our work live for the end users. ",
       id: 5
     },
     {
       imgUrl: "/images/services/support.webp",
       title: "Support",
-      description: "Lorem ipsum dolor sit amet consectetur. Magna tincidunt aliquet id ut convallis adipiscing sit. Mus ut amet eget senectus posuere. Quam nunc elementum ultricies eget vel.",
+      description: "Now we move to maintenance mode and begin practicing any operations needed to handle end-user difficulties. Additionally, make any changes that the software might require after deployment.",
       id: 6
     },
   ];

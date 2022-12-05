@@ -41,12 +41,12 @@ export default function AboutInfo() {
                 <div className={style.makesSec}>
                   <div>
                     <h4 className={`${style.titleCustom} title4 text-white`}>Goal focussed</h4>
-                    <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p className="subtext">With concepts that incite, engage, and excite, we aim to give you the best of what we do. With this goal, we generate ideas that go against the grain and influence trends. </p>
                   </div>
 
                   <div>
                     <h4 className={`${style.titleCustom} title4 text-white`}>Continuous improvement</h4>
-                    <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <p className="subtext">We believe in continuous learning and improving to offer our enterprise clients cutting-edge engineering solutions and untangling the complicated problems that inevitably crop up during their digital evolution journeys.  </p>
                   </div>
                 </div>
               </div>

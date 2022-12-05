@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 import { useRouter } from "next/router";
+import ScrollButton from './scrollButton';
 
 export default function LayoutPrimary(props) {
   const router = useRouter();
@@ -98,14 +99,23 @@ export default function LayoutPrimary(props) {
               </p>
 
               <div className="card-contact">
-                <div className="info">
-                  <div className="subtext">Email me at</div>
-                  <div className="text4 text-semibold mt-2">contact@website.com</div>
+                <div className='flex-sec'>
+                  <div className="info">
+                    <div className="subtext">Email me at</div>
+                    <div className="text4 text-semibold mt-2 ">
+                      <a href="mailto:hello@wishit.au" className='email-text'>hello@wishit.au</a>
+                    </div>
+                  </div>
+
+                  <div className="info">
+                    <div className="subtext">Call us</div>
+                    <div className="text4 text-semibold mt-2">0927 6277 28525</div>
+                  </div>
                 </div>
 
                 <div className="info">
-                  <div className="subtext">Call us</div>
-                  <div className="text4 text-semibold mt-2">0927 6277 28525</div>
+                  <div className="subtext">Our Address</div>
+                  <div className="text4 text-semibold mt-2">903/9 Parnnell St, Strathfield, NSW, 2135</div>
                 </div>
               </div>
             </div>
@@ -129,7 +139,7 @@ export default function LayoutPrimary(props) {
           <div className='copyright'>
             <div className="row">
               <div className="col-sm-4">
-                <div className='copyright-text'> Copyright 2022, wishit.com</div>
+                <div className='copyright-text'> Copyright 2022, wish.au</div>
               </div>
               <div className="col-sm-8 text-right">
                 <ul className="footer-nav">
@@ -169,6 +179,8 @@ export default function LayoutPrimary(props) {
           </div>
         </div>
       </footer>
+
+      <ScrollButton />
     </div>
   )
 }

@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 export default function BuildGreatBanner() {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    gsap.from(".animation-block .animation-build-great", 1.8, {
+    gsap.from(".animation-block .animation-build-great", 1.2, {
       y: 100,
       ease: "power4.out",
       delay: 1,
@@ -30,7 +30,7 @@ export default function BuildGreatBanner() {
               <div className='content-wrapper'>
                 <div className='content-section'>
                   <h4 className="title4">Let&apos;s build something great together</h4>
-                  <p className="subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+                  <p className="subtext">Request a price quote for our services.</p>
                 </div>
               </div>
               <Link href="/">

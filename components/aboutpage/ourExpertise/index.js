@@ -6,23 +6,21 @@ import style from "./style.module.scss"
 const cardData = [
   {
     imgUrl: '/icons/timer.svg',
-    numbers: '15+',
-    title: 'On Time Delivery',
-    description: 'Through True Rich Attended does no end it his mother since real had half every him',
+    title: 'On-time delivery ',
+    description: 'We keep our promises! WishIT deliver the product on the day you have wished for it. ',
     animationDuration: 500
   },
   {
     imgUrl: '/icons/like.svg',
-    numbers: '500+',
-    title: 'Clients served',
-    description: 'Through True Rich Attended does no end it his mother since real had half every him',
+    title: 'Best quality',
+    description: 'We have built a process that balances corporate goals, user needs, and capabilities at every step of the way so that we can deliver you the best of the best.',
     animationDuration: 800
   },
   {
     imgUrl: '/icons/support.svg',
-    numbers: '34',
-    title: 'Employees',
-    description: 'Through True Rich Attended does no end it his mother since real had half every him',
+    title: 'Support assistance ',
+    description: `1. Through True Rich Attended does no end it his mother since real had half every him`,
+    description2: `2. Through True Rich Attended does no end it his mother since real had half every him`,
     animationDuration: 1000
   },
 ]
@@ -34,8 +32,8 @@ export default function OurExpertise() {
         <div className={`${style.customRow} row`}>
           <div className="col-sm-6">
             <p className="subtext-semibold text-primary text-uppercase">Our expertise</p>
-            <h3 className="title3 text-white">We want to get local identification in every corner of the world </h3>
-            <p className={`${style.subtextCustom} subtext mt-4`}>Through True Rich Attended does no end it his mother since real had half every him case in packages enquire we up ecstatic unsatiable saw his giving Remain expense you position concluded. </p>
+            <h3 className="title3 text-white"> You wish it, and wishIT will make it come true.</h3>
+            <p className={`${style.subtextCustom} subtext mt-4`}>With our top-notch service and cutting-edge high-tech solutions, we want to build recognition in every corner of the globe.</p>
           </div>
           <div className="col-sm-6">
             <div className={style.cardStyle}>
@@ -52,6 +50,7 @@ export default function OurExpertise() {
                   <div className={style.contentSec}>
                     <h3 className="text3 text-white text-semibold">{item.title}</h3>
                     <p className='subtext mb-0'>{item.description}</p>
+                    {item.description2 && <p className='subtext mt-3'>{item.description2}</p>}
                   </div>
                 </div>
               ))}

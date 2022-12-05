@@ -32,10 +32,10 @@ export default function TheEnergy() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-sm-6">
-            <h4 className="title4 text-white">The energy of a start-up combined with 30 years of experience</h4>
+            <h4 className="title4 text-white">With the energy of a start-up and more than 20 years of experience </h4>
           </div>
           <div className="col-sm-6">
-            <p className={style.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet eros blandit, hendrerit elit et, mattis purus. Vivamus commodo suscipit tellus et pellentesque.</p>
+            <p className={style.description}>With our start-up vigor and more than 30 years of expertise, we have been serving as a visionary and trustworthy software engineering partner for world-class brands.</p>
           </div>
         </div>
 
@@ -68,7 +68,7 @@ export default function TheEnergy() {
                     height={48}
                   />
                 </div>
-                <p className="text4 text-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p className="text4 text-medium">We are on a quest with our thinkers, creatives, and engineers to 'crack the process of turning ideas into reality by delivering truly meaningful solutions. </p>
               </div>
             </div>
             <div className="col-sm-6">
@@ -85,7 +85,7 @@ export default function TheEnergy() {
                     height={48}
                   />
                 </div>
-                <p className="text4 text-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <p className="text4 text-medium">We are on a mission to make you fall in love with your brand with our breathtaking personal touch!</p>
               </div>
             </div>
           </div>
