@@ -8,17 +8,17 @@ export default function TheValuesHome() {
     {
       imgUrl: '/icons/trust.svg',
       title: 'Trust',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      subText: 'Because we’ve been there and earned it.'
     },
     {
       imgUrl: '/icons/security.svg',
       title: 'Security',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      subText: 'Beause we will provide you cyber shield to save you from from data theft.'
     },
     {
       imgUrl: '/icons/privacy.svg',
       title: 'Privacy',
-      subText: 'Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam .'
+      subText: 'Beause we know how to keep your information and data safe.'
     }
   ];
 

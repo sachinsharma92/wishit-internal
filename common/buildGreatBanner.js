@@ -30,7 +30,7 @@ export default function BuildGreatBanner() {
               <div className='content-wrapper'>
                 <div className='content-section'>
                   <h4 className="title4">Let&apos;s build something great together</h4>
-                  <p className="subtext">Request a price quote for our services.</p>
+                  {/* <p className="subtext">Request a price quote for our services.</p> */}
                 </div>
               </div>
               <Link href="/">

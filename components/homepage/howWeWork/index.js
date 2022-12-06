@@ -13,7 +13,7 @@ export default function HowWeWork() {
     {
       imgUrl: "/images/services/discover.jpeg",
       title: "Discover",
-      description: "Sticking with our clients, we gather information to determine your target audience, their issues, and your business's needs.",
+      description: "that helps make essential architectural and technical decisions sticking with our clients, we gather information to determine your target audience, their issues, and your business's needs.   ",
       id: 1,
     },
     {

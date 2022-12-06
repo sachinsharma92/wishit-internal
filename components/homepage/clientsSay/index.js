@@ -68,7 +68,7 @@ export default function ClientsSay() {
               <Carousel variant="dark" indicators={false}>
                 {clientSay.map((item, index) => (
                   <Carousel.Item key={index}>
-                    <p className={`${style.subtextInner} subtext mt-4`}>Ultricies amet vulputate nulla in elit elit orci vitae tortor. Nunc ut pretium lectus aliquet varius pretium. Nec convallis morbi sapien aliquet augue. Nulla nulla integer pellentesque neque cum amet, turpis lacus, massa. Eu velit nunc adipiscing tincidunt blandi.</p>
+                    <p className={`${style.subtextInner} subtext mt-4`}>Client Conetent has to come here in this section</p>
 
                     <div className='rating-sec'>
                       <FaStar />

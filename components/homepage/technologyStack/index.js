@@ -10,7 +10,7 @@ export default function TechnologyStack() {
     {
       id: 1,
       icon: '/icons/web-development.svg',
-      description: 'We partner with you to create custom websites that convert and leaves the user smiling.',
+      description: 'At WishIt, we create websites and web apps that ensure you are seen and heard in the right places.',
       heading: 'Web Development',
       techIcons: [
         '/icons/technology/angular.svg',
@@ -22,7 +22,7 @@ export default function TechnologyStack() {
     {
       id: 2,
       icon: '/icons/app-evelopment.svg',
-      description: 'We partner with you to create custom websites that convert and leaves the user smiling.',
+      description: 'Meet your demanding deadlines with our mobile app development solution, which combines a mobile platform, custom development, & slashing technology.',
       heading: 'App Development',
       techIcons: [
         '/icons/technology/android.svg',
@@ -34,7 +34,7 @@ export default function TechnologyStack() {
     {
       id: 3,
       icon: '/icons/dev-ops-services.svg',
-      description: 'We partner with you to create custom websites that convert and leaves the user smiling.',
+      description: 'Break the silos between the development and operations teams by connecting them through the infinity loop. And get the best in your next CI/CD pipeline.',
       heading: 'DevOps Services',
       techIcons: [
         '/icons/technology/docker.svg',

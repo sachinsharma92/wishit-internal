@@ -8,27 +8,27 @@ export default function TheValuesAbout() {
     {
       imgUrl: '/icons/trust.svg',
       title: 'Trust',
-      subText: 'Because we’ve been there and earned it. '
+      subText: 'Because we’ve been there and earned it.'
     },
     {
       imgUrl: '/icons/security.svg',
-      title: 'Friendly support',
-      subText: 'Because we will be there for you at all stages of the procedure, and even after delivery.'
+      title: 'Security',
+      subText: 'Beause we will provide you cyber shield to save you from from data theft.'
     },
     {
       imgUrl: '/icons/privacy.svg',
-      title: 'Domain expertise',
-      subText: 'Because we have a tech-savvy crew.'
+      title: 'Privacy',
+      subText: 'Beause we know how to keep your information and data safe.'
     },
     {
       imgUrl: '/icons/trust.svg',
-      title: 'Security',
-      subText: 'Because we will provide you cyber shield to save you from data theft. '
+      title: 'Domian Expertise',
+      subText: 'Because we have a tech-savvy crew'
     },
     {
       imgUrl: '/icons/security.svg',
-      title: 'Privacy',
-      subText: 'Because we are skilled at keeping your information and data secure. '
+      title: 'Friendly Support',
+      subText: 'Because we will be there for you even after delivery.'
     },
     {
       imgUrl: '/icons/privacy.svg',

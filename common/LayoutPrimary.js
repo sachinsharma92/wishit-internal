@@ -139,7 +139,7 @@ export default function LayoutPrimary(props) {
           <div className='copyright'>
             <div className="row">
               <div className="col-sm-4">
-                <div className='copyright-text'> Copyright 2022, wish.au</div>
+                <div className='copyright-text'> Copyright 2022, Wish IT Pty Ltd - ABN 31657846314</div>
               </div>
               <div className="col-sm-8 text-right">
                 <ul className="footer-nav">
@@ -153,24 +153,19 @@ export default function LayoutPrimary(props) {
                       About us
                     </a>
                   </Link>
-                  <Link href="/">
+                  <Link href="/services">
                     <a className='nav-link'>
-                      Features
+                      Services
                     </a>
                   </Link>
-                  <Link href="/">
+                  <Link href="/portfolio">
                     <a className='nav-link'>
-                      Pricing
+                      Portfolio
                     </a>
                   </Link>
-                  <Link href="/">
+                  <Link href="/technology">
                     <a className='nav-link'>
-                      FAQ
-                    </a>
-                  </Link>
-                  <Link href="/">
-                    <a className='nav-link'>
-                      Blog
+                      Technology Stack
                     </a>
                   </Link>
                 </ul>
