@@ -39,7 +39,7 @@ export default function HeroTechSection() {
                 <div className={`${style.titleCustom} title4 animation-technology-stack`}>A look at wide variety of</div>
               </div>
               <div className="animation-block">
-                <div className="title2 animation-technology-stack"><span className='text-gradient'>Technology Stack</span></div>
+                <div className={`${style.title2Custom} title2 animation-technology-stack`}><span className='text-gradient'>Technology Stack</span></div>
               </div>
             </h1>
             <div className="animation-block">
