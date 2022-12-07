@@ -18,7 +18,7 @@ export default function TheValuesAbout() {
     {
       imgUrl: '/icons/privacy.svg',
       title: 'Privacy',
-      subText: 'Beause we know how to keep your information and data safe.'
+      subText: 'Because we are skilled at keeping your information and data secure.'
     },
     {
       imgUrl: '/icons/trust.svg',
@@ -28,7 +28,7 @@ export default function TheValuesAbout() {
     {
       imgUrl: '/icons/security.svg',
       title: 'Friendly Support',
-      subText: 'Because we will be there for you even after delivery.'
+      subText: 'Because we will be there for you at all stages of the procedure, and even after delivery.'
     },
     {
       imgUrl: '/icons/privacy.svg',

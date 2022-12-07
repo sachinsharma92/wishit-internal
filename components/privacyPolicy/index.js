@@ -66,7 +66,6 @@ export default function PrivacyPolicy() {
         <div className="row">
           <div className="col-sm-6">
             <h3 className={`${style.title4} title4 text-white`}>Privacy Policy</h3>
-            <p className={`${style.textCustom} subtext mt-4`}>When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help you bring your </p>
           </div>
         </div>
         <div className="row">

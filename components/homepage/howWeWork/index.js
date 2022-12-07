@@ -13,13 +13,13 @@ export default function HowWeWork() {
     {
       imgUrl: "/images/services/discover.jpeg",
       title: "Discover",
-      description: "that helps make essential architectural and technical decisions sticking with our clients, we gather information to determine your target audience, their issues, and your business's needs.   ",
+      description: "that helps make essential architectural and technical decisions sticking with our clients, we gather information to determine your target audience, their issues, and your business's needs.",
       id: 1,
     },
     {
       imgUrl: "/images/services/design.webp",
       title: "Design",
-      description: "With the help of our tech-savvy team, we produce/create outlines that are specifically tailored to your business's demands. ",
+      description: "With the help of our tech-savvy team, we produce/create outlines that are specifically tailored to your business's demands.",
       id: 2,
     },
     {
@@ -37,13 +37,13 @@ export default function HowWeWork() {
     {
       imgUrl: "/images/services/deployment.webp",
       title: "Deployment",
-      description: "The tried and tested software comes to an end and goes into the deployment phase. Here we make our work live for the end users. ",
+      description: "The tried and tested software comes to an end and goes into the deployment phase. Here we make our work live for the end users.",
       id: 5
     },
     {
       imgUrl: "/images/services/support.webp",
       title: "Support",
-      description: "Now we move to maintenance mode and begin practicing any operations needed to handle end-user difficulties. Additionally, make any changes that the software might require after deployment.",
+      description: "Now we move to maintenance mode and begin practising any operations needed to handle end-user difficulties. Additionally, make any changes that the software might require after deployment.",
       id: 6
     },
   ];

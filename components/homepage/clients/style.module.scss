@@ -43,12 +43,13 @@
 
   .upDownGrid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px 10px;
     padding: 0 120px;
-    margin-top: 150px;
     position: relative;
     z-index: 1;
+    max-width: 78%;
+    margin: 150px auto 0;
 
     @include mobile {
       grid-template-columns: repeat(2, 1fr);
@@ -65,6 +66,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      position: relative;
+
+      .imageSec {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        scale: 0.8;
+      }
 
       @include mobile {
         width: 100%;

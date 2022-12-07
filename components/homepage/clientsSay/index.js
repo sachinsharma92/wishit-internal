@@ -62,7 +62,7 @@ export default function ClientsSay() {
             <div className='col-sm-6'>
               <div className='animation-block '>
                 <h3 className="title3 text-white animation-client-say">
-                  What our Clients have to say...
+                  Don’t just take our <br /> words
                 </h3>
               </div>
               <Carousel variant="dark" indicators={false}>

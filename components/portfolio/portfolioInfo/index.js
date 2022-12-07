@@ -87,7 +87,7 @@ export default function PortfolioInfo() {
           <div className="col-sm-12">
             <h1 className="text-white text-center">
               <div className="animation-block">
-                <div className="title2 animation-projects">A look at our</div>
+                <div className="title3 animation-projects">A look at our</div>
               </div>
               <div className="animation-block">
                 <div className="title2 animation-projects"><span className='text-gradient'> Amazing Projects</span></div>

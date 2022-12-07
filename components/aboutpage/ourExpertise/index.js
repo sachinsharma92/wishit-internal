@@ -7,19 +7,19 @@ const cardData = [
   {
     imgUrl: '/icons/timer.svg',
     title: 'On-time delivery ',
-    description: 'Our mission is to make you fall in love with your brand with our breathtaking personal touch!',
+    description: 'We keep our promises! WishIT deliver the product on the day you have wished for it.',
     animationDuration: 500
   },
   {
     imgUrl: '/icons/like.svg',
     title: 'Best quality',
-    description: 'We have built a process that balances corporate goals, user needs, & capabilities at every step.',
+    description: 'We have built a process that balances corporate goals, user needs, and capabilities at every step of the way so that we can deliver you the best of the best.',
     animationDuration: 800
   },
   {
     imgUrl: '/icons/support.svg',
     title: 'Support Assist',
-    description: `We have built a process that balances corporate goals, user needs, & capabilities at every step of the way so that we can deliver you best of best.`,
+    description: `We advise, design, build, migrate, manage, protect, optimize, & support as an extension of your team, assisting you to achieve more.`,
     animationDuration: 1000
   },
 ]

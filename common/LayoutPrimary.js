@@ -91,9 +91,16 @@ export default function LayoutPrimary(props) {
         <div className="container">
           <div className="row">
             <div className="col-sm-6">
-              <h3 className="title3 text-white">
-                Wishit
-              </h3>
+              <Link href="/" >
+                <a className="footer-brand">
+                  <Image
+                    src="/images/logo.svg"
+                    alt="theme logo"
+                    layout='fill'
+                  />
+                </a>
+              </Link>
+
               <p className="subText max-subtext">
                 We are always open to discuss your project and improve your online presence.
               </p>

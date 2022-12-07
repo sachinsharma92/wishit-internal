@@ -58,7 +58,7 @@ export default function TheEnergy() {
               <div className={style.cardCustom}>
                 <div className={style.iconAlign}>
                   <div>
-                    <div className="subtext text-white">Our Vision</div>
+                    <div className="subtext text-white text-semibold">Our Vision</div>
                     <h4 className={`${style.titleSpace} text1 text-white`}>Laser focus</h4>
                   </div>
                   <Image
@@ -75,7 +75,7 @@ export default function TheEnergy() {
               <div className={style.cardCustom}>
                 <div className={style.iconAlign}>
                   <div>
-                    <div className="subtext text-white">Our Vision</div>
+                    <div className="subtext text-white text-semibold">Our Vision</div>
                     <h4 className={`${style.titleSpace} text1 text-white`}>Inspire, Innovate, Share</h4>
                   </div>
                   <Image

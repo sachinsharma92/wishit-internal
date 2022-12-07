@@ -5,53 +5,38 @@ import style from "./style.module.scss"
 export default function Clients() {
   const clientCard = [
     {
-      imgUrl: '/icons/clients/icon1.svg',
+      imgUrl: '/icons/clients/new/img1.png',
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon2.svg',
+      imgUrl: '/icons/clients/new/img2.png',
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon3.svg',
+      imgUrl: '/icons/clients/new/img3.png',
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon4.svg',
+      imgUrl: '/icons/clients/new/img4.png',
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon5.svg',
+      imgUrl: '/icons/clients/new/img5.png',
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon6.svg',
+      imgUrl: '/icons/clients/new/img6.png',
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/icon7.svg',
+      imgUrl: '/icons/clients/new/img7.png',
       duration: 1200
     },
     {
-      imgUrl: '/icons/clients/icon8.svg',
+      imgUrl: '/icons/clients/new/img8.png',
       duration: 1200
     },
-    {
-      imgUrl: '/icons/clients/icon9.svg',
-      duration: 1200
-    },
-    {
-      imgUrl: '/icons/clients/icon10.svg',
-      duration: 1200
-    },
-    {
-      imgUrl: '/icons/clients/icon11.svg',
-      duration: 1200
-    },
-    {
-      imgUrl: '/icons/clients/icon12.svg',
-      duration: 1200
-    }
+
   ]
   return (
     <section className={`${style.clients} tab-vertical-image`}>
@@ -67,8 +52,8 @@ export default function Clients() {
               <Image
                 src={item.imgUrl}
                 alt="Picture of the author"
-                width={140}
-                height={28}
+                layout="fill"
+                className={style.imageSec}
               />
             </div>
           )

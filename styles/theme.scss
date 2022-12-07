@@ -310,8 +310,8 @@ body {
 
   .navbar-brand {
     position: relative;
-    height: 28px;
-    width: 100px;
+    height: 36px;
+    width: 163px;
 
     @include mobile {
       z-index: 2;
@@ -879,6 +879,28 @@ body {
 
     .subtext {
       color: #0b2542;
+    }
+  }
+
+  .footer-brand {
+    position: relative;
+    height: 22px;
+    width: 107px;
+    display: flex;
+    margin-bottom: 20px;
+
+    @include mobile {
+      z-index: 2;
+      width: 90px;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
   }
 
