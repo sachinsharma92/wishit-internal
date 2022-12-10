@@ -50,7 +50,7 @@ export default function TechnologyStack() {
     gsap.from(".animation-block .animation-Technology", 1.4, {
       y: 100,
       ease: "power4.out",
-      delay: 1,
+      delay: 0.1,
       skewY: 0,
       stagger: {
         amount: 0.3
@@ -76,7 +76,7 @@ export default function TechnologyStack() {
               <div className="animation-Technology">Technology stack</div>
             </div>
           </h2>
-          <Link href="/">
+          <Link href="/technology">
             <a className='btn-link-custom animation-block'>
               <div className='animation-Technology'>
                 View All tech<FaArrowRight size={15} />
@@ -108,8 +108,8 @@ export default function TechnologyStack() {
                             key={index}
                             src={techIcon}
                             alt="Picture of the author"
-                            width={32}
-                            height={32}
+                            width={45}
+                            height={45}
                             data-aos="zoom-in"
                             data-aos-duration="1000"
                           />

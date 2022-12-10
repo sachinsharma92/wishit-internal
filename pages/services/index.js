@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react'
 import BuildGreatBanner from '../../common/buildGreatBanner';
 import LayoutPrimary from '../../common/LayoutPrimary'
@@ -6,10 +7,15 @@ import OurExpertise from '../../components/services/ourExpertise';
 
 export default function ServicesPage() {
   return (
-    <LayoutPrimary>
-      <HeroServiceSection />
-      <OurExpertise />
-      <BuildGreatBanner />
-    </LayoutPrimary>
+    <>
+      <Head>
+        <title>WishIt : Services</title>
+      </Head>
+      <LayoutPrimary>
+        <HeroServiceSection />
+        <OurExpertise />
+        <BuildGreatBanner />
+      </LayoutPrimary>
+    </>
   )
 }

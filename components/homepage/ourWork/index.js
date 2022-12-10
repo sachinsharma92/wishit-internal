@@ -10,19 +10,19 @@ export default function OurWork() {
   const cardSlides = [
     {
       projectImage: '/images/banners/mealq.jpg',
-      projectTitle: 'Workhub office Webflow Webflow Design',
+      projectTitle: 'MealQ',
     },
     {
       projectImage: '/images/banners/study-torch.jpg',
-      projectTitle: 'Workhub office Webflow Webflow Design',
+      projectTitle: 'Studytorch',
     },
     {
       projectImage: '/images/banners/my-merch.jpg',
-      projectTitle: 'Workhub office Webflow Webflow Design',
+      projectTitle: 'MyMerch',
     },
     {
       projectImage: '/images/banners/one-tracker.jpg',
-      projectTitle: 'Workhub office Webflow Webflow Design',
+      projectTitle: 'Onetracker',
     }
   ]
 
@@ -57,7 +57,7 @@ export default function OurWork() {
     gsap.from(".animation-block .animation-title", 1.4, {
       y: 100,
       ease: "power4.out",
-      delay: 1,
+      delay: 0.1,
       skewY: 0,
       stagger: {
         amount: 1
@@ -65,7 +65,7 @@ export default function OurWork() {
       autoAlpha: 0,
       scrollTrigger: {
         trigger: '#heading',
-        start: 'center bottom',
+        start: 'top bottom',
         markers: false
       },
     })

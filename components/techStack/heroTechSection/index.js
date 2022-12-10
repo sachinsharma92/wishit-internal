@@ -10,7 +10,7 @@ export default function HeroTechSection() {
     gsap.from(".animation-block .animation-technology-stack", 1.4, {
       y: 100,
       ease: "power4.out",
-      delay: 1,
+      delay: 0.1,
       skewY: 0,
       stagger: {
         amount: 0.3
@@ -20,7 +20,7 @@ export default function HeroTechSection() {
   }, [])
 
   useEffect(() => {
-    ScrollReveal({ reset: true });
+    ScrollReveal({ reset: false });
     ScrollReveal().reveal(".scaleUpTech", {
       duration: 4000,
       scale: 0.75

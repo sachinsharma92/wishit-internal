@@ -11,7 +11,7 @@ export default function HeroSection() {
     tl.from(".animation-block .animation-text", 1.4, {
       y: 100,
       ease: "power4.out",
-      delay: 1,
+      delay: 0.1,
       skewY: 0,
       stagger: {
         amount: 0.3
@@ -21,10 +21,10 @@ export default function HeroSection() {
   }, [tl])
 
   useEffect(() => {
-    ScrollReveal({ reset: true });
+    ScrollReveal({ reset: false });
     ScrollReveal().reveal(".scaleUpHome", {
       duration: 4000,
-      scale: 0.75
+      scale: 0.75,
     });
   }, [])
 
@@ -75,7 +75,7 @@ export default function HeroSection() {
             </h1>
             <div className='animation-block'>
               <div className={`${style.heroBtn} animation-text`}>
-                <Link href="/">
+                <Link href="/portfolio">
                   <a className='btn btn-info btn-lg mt-5'>
                     View our work <FaArrowDown size={18} />
                   </a>

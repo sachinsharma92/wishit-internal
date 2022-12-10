@@ -42,7 +42,7 @@ export default function PortfolioInfo() {
     gsap.from(".animation-block .animation-projects", 1.4, {
       y: 100,
       ease: "power4.out",
-      delay: 1,
+      delay: 0.1,
       skewY: 0,
       stagger: {
         amount: 0.3

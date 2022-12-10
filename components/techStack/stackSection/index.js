@@ -208,8 +208,8 @@ export default function StackSection() {
                                     <Image
                                       src={techImage.imageUrl}
                                       alt="Picture of the author"
-                                      width={48}
-                                      height={48}
+                                      width={56}
+                                      height={56}
                                     />
                                     <p className="subtext-semibold mt-2">{techImage.techTitle}</p>
                                   </li>

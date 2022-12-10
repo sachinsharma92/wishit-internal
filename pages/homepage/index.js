@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react'
 import BuildGreatBanner from '../../common/buildGreatBanner';
 import LayoutPrimary from '../../common/LayoutPrimary'
@@ -11,15 +12,21 @@ import TheValuesHome from '../../components/homepage/theValuesHome';
 
 export default function Homepage() {
   return (
-    <LayoutPrimary>
-      <HeroSection />
-      <HowWeWork />
-      <OurWork />
-      <Clients />
-      <TechnologyStack />
-      <ClientsSay />
-      <TheValuesHome />
-      <BuildGreatBanner />
-    </LayoutPrimary>
+    <>
+      <Head>
+        <title>WishIt : Home</title>
+      </Head>
+      <LayoutPrimary>
+        <HeroSection />
+        <HowWeWork />
+        <OurWork />
+        <Clients />
+        <TechnologyStack />
+        <ClientsSay />
+        <TheValuesHome />
+        <BuildGreatBanner />
+      </LayoutPrimary>
+    </>
+
   )
 }

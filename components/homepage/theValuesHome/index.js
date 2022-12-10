@@ -27,7 +27,7 @@ export default function TheValuesHome() {
     gsap.from(".animation-block .animation-the-value-home", 1.4, {
       y: 100,
       ease: "power4.out",
-      delay: 1,
+      delay: 0.1,
       skewY: 7,
       stagger: {
         amount: 0.3

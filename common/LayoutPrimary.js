@@ -145,10 +145,10 @@ export default function LayoutPrimary(props) {
 
           <div className='copyright'>
             <div className="row">
-              <div className="col-sm-4">
-                <div className='copyright-text'> Copyright 2022, Wish IT Pty Ltd - ABN 31657846314</div>
+              <div className="col-sm-6">
+                <div className='copyright-text'> Copyright © 2022, Wish IT Pty Ltd - ABN 31657846314</div>
               </div>
-              <div className="col-sm-8 text-right">
+              <div className="col-sm-6 text-right">
                 <ul className="footer-nav">
                   <Link href="/">
                     <a className='nav-link'>

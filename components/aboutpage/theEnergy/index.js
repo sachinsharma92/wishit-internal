@@ -55,7 +55,7 @@ export default function TheEnergy() {
         <div className={style.ourMissionVision}>
           <div className="row align-items-center">
             <div className="col-sm-6">
-              <div className={style.cardCustom}>
+              <div className={style.cardCustom} data-aos="fade-up" data-aos-duration="1000">
                 <div className={style.iconAlign}>
                   <div>
                     <div className="subtext text-white text-semibold">Our Vision</div>
@@ -72,7 +72,7 @@ export default function TheEnergy() {
               </div>
             </div>
             <div className="col-sm-6">
-              <div className={style.cardCustom}>
+              <div className={style.cardCustom} data-aos="fade-up" data-aos-duration="1000">
                 <div className={style.iconAlign}>
                   <div>
                     <div className="subtext text-white text-semibold">Our Vision</div>

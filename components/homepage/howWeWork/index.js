@@ -72,8 +72,8 @@ export default function HowWeWork() {
     gsap.from(".animation-block .animation-how-work", 1.4, {
       y: 100,
       ease: "power4.out",
-      delay: 1,
-      skewY: 7,
+      delay: 0.1,
+      skewY: 0,
       stagger: {
         amount: 0.3
       },
@@ -93,7 +93,7 @@ export default function HowWeWork() {
           <div className="animation-block">
             <h2 className="title2 text-white animation-how-work">How we work.</h2>
           </div>
-          <Link href="/">
+          <Link href="/contact">
             <a className='btn-link-custom animation-block'>
               <div className="animation-how-work">
                 Get in touch with us <FaArrowRight size={15} />

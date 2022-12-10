@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import React from 'react'
 import BuildGreatBanner from '../../common/buildGreatBanner';
 import LayoutPrimary from '../../common/LayoutPrimary'
@@ -9,13 +10,19 @@ import TheValuesAbout from '../../components/aboutpage/theValuesAbout';
 
 export default function AboutPage() {
   return (
-    <LayoutPrimary>
-      <AboutInfo />
-      <TheEnergy />
-      <OurExpertise />
-      <TheValuesAbout />
-      {/* <OurLeadershipTeam /> */}
-      <BuildGreatBanner />
-    </LayoutPrimary>
+    <>
+      <Head>
+        <title>WishIt : About</title>
+      </Head>
+
+      <LayoutPrimary>
+        <AboutInfo />
+        <TheEnergy />
+        <OurExpertise />
+        <TheValuesAbout />
+        {/* <OurLeadershipTeam /> */}
+        <BuildGreatBanner />
+      </LayoutPrimary>
+    </>
   )
 }

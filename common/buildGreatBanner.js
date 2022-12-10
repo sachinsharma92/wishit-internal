@@ -4,25 +4,18 @@ import React, { useEffect } from 'react'
 
 export default function BuildGreatBanner() {
   useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.from(".animation-block .animation-build-great", 1.2, {
-      y: 100,
-      ease: "power4.out",
-      delay: 1,
-      skewY: 0,
-      stagger: {
-        amount: 0.3
-      },
-      autoAlpha: 0,
-      scrollTrigger: {
-        trigger: '#buildGreat',
-        start: 'top bottom',
-        markers: false
-      },
-    })
+    ScrollReveal().reveal(".slide-up", {
+      duration: 500,
+      origin: "bottom",
+      distance: "100px",
+      easing: "cubic-bezier(.37,.01,.74,1)",
+      opacity: 0.3,
+      scale: 0.9
+    });
+
   }, [])
   return (
-    <div id='buildGreat'>
+    <div id='buildGreat' className="slide-up">
       <div className='animation-block'>
         <div className="banner-style-section animation-build-great">
           <div className="container">
