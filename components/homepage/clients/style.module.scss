@@ -56,6 +56,7 @@
       padding: 0 0px;
       gap: 5px;
       margin-top: 50px;
+      max-width: 98%;
     }
 
     .cardGrid {
@@ -83,7 +84,10 @@
         height: 160px;
       }
 
-      &:nth-child(even) {
+      &:nth-child(1),
+      &:nth-child(4),
+      &:nth-child(5),
+      &:nth-child(8) {
         margin-top: -80px;
 
         @include mobile {

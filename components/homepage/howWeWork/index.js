@@ -55,12 +55,10 @@ export default function HowWeWork() {
     let ImageSourceInterval;
     if (count < dataList.length) {
       ImageSourceInterval = setInterval(() => setCount(count + 1), 2500);
-
     }
     if (count >= dataList.length) {
       setCount(0);
     }
-
     setImageSource(dataList[count]?.imgUrl);
     setActiveTitle(dataList[count]?.id)
     return () => clearInterval(ImageSourceInterval);
