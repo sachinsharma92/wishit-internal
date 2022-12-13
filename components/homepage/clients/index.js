@@ -13,11 +13,11 @@ export default function Clients() {
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/new/img3.png',
+      imgUrl: '/icons/clients/new/img4.png',
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/new/img4.png',
+      imgUrl: '/icons/clients/new/img3.png',
       duration: 1000
     },
     {
@@ -29,14 +29,13 @@ export default function Clients() {
       duration: 1000
     },
     {
-      imgUrl: '/icons/clients/new/img7.png',
-      duration: 1200
-    },
-    {
       imgUrl: '/icons/clients/new/img8.png',
       duration: 1200
     },
-
+    {
+      imgUrl: '/icons/clients/new/img7.png',
+      duration: 1200
+    },
   ]
   return (
     <section className={`${style.clients} tab-vertical-image`}>
